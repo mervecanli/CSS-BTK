@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-bottom  =>  HTML elementinin ALT kenarlık/çerçeve özelliğini belirler.
+                Parametreler   =>  length | style | color
+                Değerler       =>  length & initial & inherit & thin & medium & thick |
+                                   none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset |
+                                   color
+
+                length         =>  Uzunluk değeri.
+                initial        =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+                inherit        =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+                thin           =>  İnce.           
+                medium         =>  Orta.          
+                thick          =>  Kalın.  
+
+                none           =>  Değer yok.         
+                hidden         =>  Gizli.           
+                solid          =>  Düz çizgi.          
+                double         =>  Çift çizgi.           
+                dashed         =>  Kesikli çizgi.          
+                dotted         =>  Noktalı çizgi.
+                groove         =>  İçe dönük gölgeli çizgi.
+                ridge          =>  Dışa dönük gölgeli çizgi.
+                inset          =>  İçe dönük derin çizgi.
+                outset         =>  Dışa dönük derin çizgi. 
+
+                color      =>  Renk. (rgb, ...)
+            */
+
+            div#orn1 {
+                width: 1000px;
+                height: 50px;
+                border-bottom: 10px solid red;
+            }
+            div#orn2 {
+                width: 1000px;
+                height: 50px;
+                border-bottom: 10px solid;
+            }
+            div#orn3 {
+                width: 1000px;
+                height: 50px;
+                border-bottom:thin solid red;
+            }
+            div#orn4 {
+                width: 1000px;
+                height: 50px;
+                border-bottom:medium solid red;
+            }
+            div#orn5 {
+                width: 1000px;
+                height: 50px;
+                border-bottom:thick solid red;
+            }
+            div#orn6 {
+                width: 1000px;
+                height: 50px;
+                border-bottom:thick solid red;
+            }
+            div#orn6 {
+                border-bottom: initial;
+            }
+            div#orn7 {
+                width: 1000px;
+                height: 50px;
+                border-bottom: thick solid red;
+            }
+            div#orn8 {
+                width: 1000px;
+                height: 50px;
+                border: 6px solid red;
+                border-bottom: initial;
+            }
+            div#inherit {
+                width: 1000px;
+                height: 50px;
+                border: 6px solid red;
+                border-bottom: thin solid red;
+            }
+            div#orn9 {
+                width: 500;
+                height: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 10px;
+                border: 2px solid green;
+                border-bottom: inherit;
+            }
+            div#orn10 {
+                width: 1000px;
+                height: 50px;
+                border-bottom:none;
+            }
+            div#orn11 {
+                width: 1000px;
+                height: 50px;
+                border: 6px solid red;
+                border-bottom: hidden;
+            }
+            div#orn12 {
+                width: 1000px;
+                height: 50px;
+                border: 5px double green;
+                border-bottom: solid;
+            }
+            div#orn13 {
+                width: 1000px;
+                height: 50px;
+                border: 5px solid red;
+                border-bottom: dashed;
+            }
+            div#orn14 {
+                width: 1000px;
+                height: 50px;
+                border: 5px solid red;
+                border-bottom: dotted;
+            }
+            div#orn15 {
+                width: 1000px;
+                height: 50px;
+                border: 5px solid red;
+                border-bottom: double;
+            }
+            div#orn16 {
+                width: 1000px;
+                height: 50px;
+                border: 15px solid red;
+                border-bottom:15px groove red;
+            }
+            div#orn17 {
+                width: 1000px;
+                height: 50px;
+                border: 15px solid red;
+                border-bottom: 15px ridge red;
+            }
+            div#orn18 {
+                width: 1000px;
+                height: 50px;
+                border: 15px solid red;
+                border-bottom: 15px inset red; 
+            }
+            div#orn19 {
+                width: 1000px;
+                height: 50px;
+                border: 15px solid red;
+                border-bottom: 15px outset red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div><br />
+
+        <div id="orn4"></div><br /> 
+
+        <div id="orn5"></div><br /> 
+
+        <div id="orn6"></div><br /> 
+
+        <div id="orn7" style="border-bottom: initial;"></div><br /> 
+
+        <div id="orn8"></div><br /> 
+
+        <div id="inherit">
+            <div id="orn9"></div><br /> 
+        </div>
+
+        <div id="orn10"></div><br />
+
+        <div id="orn11"></div><br />
+
+        <div id="orn12"></div><br />
+
+        <div id="orn13"></div><br />
+
+        <div id="orn14"></div><br />
+
+        <div id="orn15"></div><br />
+
+        <div id="orn16"></div><br />
+
+        <div id="orn17"></div><br />
+
+        <div id="orn18"></div><br />
+
+        <div id="orn19"></div><br />
+
+    </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*
+                border-image  =>  HTML elementinin kenarlık/çerçeve resim özelliklerini belirler.
+                Parametreler  =>  image | slice | repeat
+                Değerler      =>  image & initial & inherit |
+                                  length & % |
+                                  repeat & round & stretch
+                image         =>  Resim değeri.
+                initial       =>  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit       =>  HTML elementi üst elementinin biçimlendirme değerini alır.
+                length        =>  Uzunluk değeri.
+                %             =>  Yüzde değeri
+                repeat        =>  Tekrarla.
+                round         =>  Yuvarla.
+                stretch       =>  Uzat & Gerdir & Esnet.
+            */
+
+            div#orn1 {
+                width: 400px;
+                height: 200px;
+                border: 30px solid red;
+            }
+            div#orn2 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg");
+                -moz-border-image:url("borderImage.jpg");
+                -o-border-image:url("borderImage.jpg");
+                -ms-border-image:url("borderImage.jpg");
+                border-image:url("borderImage.jpg");
+            }
+            div#orn3 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30;
+                -moz-border-image:url("borderImage.jpg") 30;
+                -o-border-image:url("borderImage.jpg") 30;
+                -ms-border-image:url("borderImage.jpg") 30;
+                border-image:url("borderImage.jpg") 30;
+            }
+            div#orn4 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30%;
+                -moz-border-image:url("borderImage.jpg") 30%;
+                -o-border-image:url("borderImage.jpg") 30%;
+                -ms-border-image:url("borderImage.jpg") 30%;
+                border-image:url("borderImage.jpg") 30%;
+            }
+            div#orn5 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 25 30 10 20;
+                -moz-border-image:url("borderImage.jpg") 25 30 10 20;
+                -o-border-image:url("borderImage.jpg") 25 30 10 20;
+                -ms-border-image:url("borderImage.jpg") 25 30 10 20;
+                border-image:url("borderImage.jpg") 25 30 10 20; /* 2. Parametrenin 1.Parametresi: Sağ üstten yükseklik, 2.Parametresi: Sağ üstten genişlik, 3.Parametresi: Sağ alttan yükseklik, 4.Parametresi: Sol üstten genişlik */
+            }
+            div#orn6 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 25 30;
+                -moz-border-image:url("borderImage.jpg") 25 30;
+                -o-border-image:url("borderImage.jpg") 25 30;
+                -ms-border-image:url("borderImage.jpg") 25 30;
+                border-image:url("borderImage.jpg") 25 30; /* 2. Parametrenin 1.Parametresi: Sağ üstten yükseklik, 2.Parametresi: Sağ üstten genişlik */
+            }
+            div#orn7 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30 stretch;
+                -moz-border-image:url("borderImage.jpg") 30 stretch;
+                -o-border-image:url("borderImage.jpg") 30 stretch;
+                -ms-border-image:url("borderImage.jpg") 30 stretch;
+                border-image:url("borderImage.jpg") 30 stretch;
+            }
+            div#orn8 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30 repeat;
+                -moz-border-image:url("borderImage.jpg") 30 repeat;
+                -o-border-image:url("borderImage.jpg") 30 repeat;
+                -ms-border-image:url("borderImage.jpg") 30 repeat;
+                border-image:url("borderImage.jpg") 30 repeat;
+            }
+            div#orn9 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30 round;
+                -moz-border-image:url("borderImage.jpg") 30 round;
+                -o-border-image:url("borderImage.jpg") 30 round;
+                -ms-border-image:url("borderImage.jpg") 30 round;
+                border-image:url("borderImage.jpg") 30 round;
+            }
+            div#orn10 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30 round;
+                -moz-border-image:url("borderImage.jpg") 30 round;
+                -o-border-image:url("borderImage.jpg") 30 round;
+                -ms-border-image:url("borderImage.jpg") 30 round;
+                border-image:url("borderImage.jpg") 30 round;
+            }
+            div#orn10 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:inherit;
+                -moz-border-image:inherit;
+                -o-border-image:inherit;
+                -ms-border-image:inherit;
+                border-image:inherit;
+            }
+            div#orn11 {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30 round;
+                -moz-border-image:url("borderImage.jpg") 30 round;
+                -o-border-image:url("borderImage.jpg") 30 round;
+                -ms-border-image:url("borderImage.jpg") 30 round;
+                border-image:url("borderImage.jpg") 30 round;
+            }
+            div#inherit {
+                width: 400px;
+                height: 200px;
+                border: 90px solid transparent;
+                -webkit-border-image:url("borderImage.jpg") 30 round;
+                -moz-border-image:url("borderImage.jpg") 30 round;
+                -o-border-image:url("borderImage.jpg") 30 round;
+                -ms-border-image:url("borderImage.jpg") 30 round;
+                border-image:url("borderImage.jpg") 30 round;
+            }
+            div#orn12 {
+                width: 200px;
+                height: 90px;
+                margin-top: 15px;
+                margin-left: 15px;
+                border: 30px solid transparent;
+                -webkit-border-image: inherit;
+                -moz-border-image: inherit;
+                -o-border-image: inherit;
+                -ms-border-image: inherit;
+                border-image: inherit;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div><br />
+
+        <div id="orn4"></div><br />
+
+        <div id="orn5"></div><br />
+
+        <div id="orn6"></div><br />
+
+        <div id="orn7"></div><br />
+
+        <div id="orn8"></div><br />
+
+        <div id="orn9"></div><br />
+
+        <div id="orn10"></div><br />
+
+        <div id="orn11" style="-webkit-border-image: inherit; -moz-border-image: inherit; -o-border-image: inherit; -ms-border-image: inherit; border-image: inherit;"></div><br />
+    
+        <div id="inherit">
+            <div id="orn12"></div><br />
+        </div>
+
+    </body>
+</html>

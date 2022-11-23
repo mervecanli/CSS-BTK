@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* max-width     => HTML elementinin maksimum genişliğini belirler.
+               Değerler      => none | length | % | initial | inherit
+                    none     => Değer yok. (üstündeki elementinin kapladığı alan kadar yer kaplayabilir)
+                    length   => Uzunluk değeri
+                    %        => Yüzde değeri
+                    initial  => HTML elementi varsayılan biçimlendirme değerine döner.
+                    inherit  => HTML elementi üst elementinin değerini alır.
+            */
+
+            /* div {
+                background-color: palevioletred;
+                max-width: none;
+            } */
+
+            /* div {
+                background-color: aquamarine;
+                width: 300px;
+            }
+            p {
+                background-color: palevioletred;
+                max-width: none;
+            } */
+
+            /* div {
+                background-color: blueviolet;
+                max-width: 400px;
+            } */
+
+            /* p {
+                background-color: blanchedalmond;
+                max-width: 500px;
+            } */
+
+            /* div {
+                background-color: cadetblue;
+                width: 1000px;
+            }
+            p {
+                background-color: chartreuse;
+                max-width: 750px;
+            } */
+
+            /* div {
+                background-color: yellow;
+                max-width: 75%;
+            } */
+
+            /* div {
+                background-color: aquamarine;
+                max-width: 75%;
+            }
+            p {
+                background-color: darkgreen;
+                max-width: 50%;
+            } */
+
+            /* div {
+                background-color: peru;
+                max-width: 50%;
+            }
+            div {
+                max-width: initial;
+            } */
+
+            /* div {
+                background-color: plum;
+                max-width: 50%;
+            } */
+
+            /* div[name="bir"] {
+                background-color: tomato;
+                max-width: 50%;
+            }
+            div[name="iki"] {
+                background-color: lawngreen;
+                max-width: inherit; =max-width: 50%;
+            } */
+
+            div[name="bir"] {
+                background-color: aquamarine;
+                max-width: 50%;
+            }
+            div[name="iki"] {
+                background-color: brown;
+                max-width: inherit
+            }
+            div[name="uc"] {
+                background-color: blueviolet;
+                max-width: inherit
+            }
+            div[name="dort"] {
+                background-color: yellow;
+                max-width: inherit
+            }
+            p[name="bes"] {
+                background-color: cyan;
+                max-width: inherit
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div name="bir">
+            <div name="iki">
+                <div name="uc">
+                    <div name="dort">
+                        <p name="bes">CSS Eğitim Seti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div name="bir">
+            <div name="iki">Extra Eğitim - Volkan Alakent</div>
+        </div> -->
+
+        <!-- <div>1. Extra Eğitim - Volkan Alakent</div>
+        <div style="max-width:initial">2. Extra Eğitim - Volkan Alakent</div> -->
+
+        <!-- <div>
+            <p>Extra Eğitim - Volkan Alakent</p>
+        </div> -->
+
+        <!-- <div>Extra Eğitim - Volkan Alakent</div> -->
+    </body>
+</html>

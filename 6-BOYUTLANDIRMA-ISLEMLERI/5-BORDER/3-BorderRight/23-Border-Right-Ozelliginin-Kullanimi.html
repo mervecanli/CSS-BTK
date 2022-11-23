@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-right     =>  HTML elementinin SAĞ kenarlık/çerçeve özelliğini belirler.
+                Parametreler  =>  length | style | color
+                Değerler   =>  length & initial & inherit & thin & medium & thick |
+                              none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset |
+                              color
+
+                length     =>  Uzunluk değeri.
+                initial    =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+                inherit    =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+                thin       =>  İnce.           
+                medium     =>  Orta.          
+                thick      =>  Kalın.  
+
+                none       =>  Değer yok.         
+                hidden     =>  Gizli.           
+                solid      =>  Düz çizgi.          
+                double     =>  Çift çizgi.           
+                dashed     =>  Kesikli çizgi.          
+                dotted     =>  Noktalı çizgi.
+                groove     =>  İçe dönük gölgeli çizgi.
+                ridge      =>  Dışa dönük gölgeli çizgi.
+                inset      =>  İçe dönük derin çizgi.
+                outset     =>  Dışa dönük derin çizgi. 
+
+                color      =>  Renk. (rgb, ...)
+            */
+
+            p#orn1 {
+                width: 600px;
+                height: 40px;
+                border-right: 8px solid red;
+            }
+            p#orn2 {
+                width: 600px;
+                height: 40px;
+                border-right: 8px solid;
+            }
+            p#orn3 {
+                width: 600px;
+                height: 40px;
+                border-right: thin solid red;
+            }
+            p#orn4 {
+                width: 600px;
+                height: 40px;
+                border-right: medium solid red;
+            }
+            p#orn5 {
+                width: 600px;
+                height: 40px;
+                border-right: thick solid red;
+            }
+            p#orn6 {
+                width: 600px;
+                height: 40px;
+                border-right: initial;
+            }
+            div {
+                width: 600px;
+                height: 40px;
+                border-right: 10px double dodgerblue;
+            }
+            div.initial {
+                border-right: initial;
+            }
+            p#orn7 {
+                width: 600px;
+                height: 40px;
+                border: 2px solid red;
+                border-right: initial;
+            }
+            div#inherit {
+                width: 600px;
+                height: 40px;
+                border: 4px double goldenrod;
+                border-right: 8px dotted darkslategrey;
+            }
+            p#orn8 {
+                width: 450px;
+                height: 25px;
+                border: 2px dashed tomato;
+                margin-top: 5px;
+                margin-left: 15px;
+                border-right: inherit;
+            }
+            p#orn9 {
+                width: 450px;
+                height: 25px;
+                border-right: none;
+            }
+            p#orn10 {
+                width: 450px;
+                height: 25px;
+                border-right: hidden;
+            }
+            p#orn11 {
+                width: 450px;
+                height: 25px;
+                border-right: 10px solid;
+            }
+            p#orn12 {
+                width: 450px;
+                height: 25px;
+                border-right: double;
+            }
+            p#orn13 {
+                width: 450px;
+                height: 25px;
+                border-right: 5px dashed;
+            }
+            p#orn14 {
+                width: 450px;
+                height: 25px;
+                border-right: 5px dotted;
+            }
+            p#orn15 {
+                width: 450px;
+                height: 25px;
+                border: 15px solid grey;
+                border-right: 15px groove;
+            }
+            p#orn16 {
+                width: 450px;
+                height: 25px;
+                border: 15px solid grey;
+                border-right: 15px ridge;
+            }
+            p#orn17 {
+                width: 450px;
+                height: 25px;
+                border: 15px solid grey;
+                border-right: 15px inset;
+            }
+            p#orn18 {
+                width: 450px;
+                height: 25px;
+                border: 15px solid grey;
+                border-right: 15px outset;
+            }
+            p#orn19 {
+                width: 450px;
+                height: 25px;
+                border: 4px double burlywood;
+                border-right: 5px dotted crimson;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p id="orn1"></p>
+
+        <p id="orn2"></p>
+
+        <p id="orn3"></p>
+
+        <p id="orn4"></p>
+
+        <p id="orn5"></p>
+
+        <p id="orn6"></p>
+
+        <div></div><br />
+
+        <div class="initial"></div><br />
+
+        <div style="border-right: initial;"></div><br />
+
+        <div></div><br />
+
+        <p id="orn7"></p>
+
+        <div id="inherit">
+            <p id="orn8"></p>
+        </div><br />
+
+        <p id="orn9">none</p>
+
+        <p id="orn10">hidden</p>
+
+        <p id="orn11">solid</p>
+
+        <p id="orn12">double</p>
+
+        <p id="orn13">dashed</p>
+
+        <p id="orn14">dotted</p>
+
+        <p id="orn15">groove</p>
+
+        <p id="orn16">ridge</p>
+
+        <p id="orn17">inset</p>
+
+        <p id="orn18">outset</p>
+
+        <p id="orn19"></p>
+
+
+    </body>
+</html>

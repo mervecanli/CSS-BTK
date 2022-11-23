@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitim Seti</title>
+        <style>
+            /* ::first-letter => Belirtilen HTML elementinin ilk karakterine stil tanımlar.
+               ::first-line   => Belirtilen HTML elementinin ilk satırına stil tanımlar. 
+               ::before       => Belirtilen HTML elementinin öncesine içerik atayarak stil tanımlar.
+            */
+
+            /* div::before {
+                content: "CSS ";
+                color: red;
+            } */
+
+            /* div::before {
+                content: "\2600 \2601 \2602 \2603 "; unicode
+            } */
+
+            button::before {
+                content: "\2600 ";
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <button>Hava Durumu</button>
+        <!-- <div>Görsel Eğitim Seti</div> -->
+        <!-- <div>Hava Durumu</div> -->
+    </body>
+</html>

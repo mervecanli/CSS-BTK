@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  margin-right  :  HTML elementinin sağ kenar boşluğu/dış boşluk özelliklerini belirler.
+                Değerler      :  length | % | auto | initial | inherit
+                    
+                length        :  Uzunluk değeri.
+                %             :  Yüzde değeri.
+                auto          :  Otomatik değer alır.
+                initial       :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit       :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            span#orn1 {
+                width: 100px;
+                height: 50px;
+                border: 1px solid red;
+                /* margin-right: 50px; */
+            }
+            span.bir {
+                margin-right: 50px;
+            }
+            span.iki {
+                margin-right: 5%;
+            }
+            span.uc {
+                margin-right: calc(50% - 100px);
+                margin-right: initial;
+            }
+            span.dort {
+                margin-right: 40px;
+            }
+            span#orn2 {
+                width: 174px;
+                height: 54px;
+                border: 2px solid goldenrod;
+                margin-right: 40px;
+            }
+            span#inherit {
+                width: 100px;
+                height: 50px;
+                border: 2px solid purple;
+                margin-right: inherit;
+            }
+            div#orn3 {
+                width: 500px;
+                height: 20px;
+                border: 1px solid red;
+                float: right;
+                margin-right: auto;
+            }
+            p#orn4 {
+                width: 500px;
+                height: 20px;
+                border: 1px solid red;
+                float: right;
+                margin-right: auto;
+            }
+            p#orn5 {
+                width: 500px;
+                height: 20px;
+                border: 1px solid red;
+                float: right;
+                margin: 70px;
+                margin-right: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <span id="orn1" class="bir">Extra Eğitim</span>
+        <span id="orn1">Volkan Alakent</span>
+        <span id="orn1">Görsel Eğitim Setleri</span><br /><br />
+
+        <span id="orn1" class="iki">Extra Eğitim</span>
+        <span id="orn1">Volkan Alakent</span>
+        <span id="orn1">Görsel Eğitim Setleri</span><br /><br />
+
+        <span id="orn1" class="uc">Extra Eğitim</span>
+        <span id="orn1">Volkan Alakent</span>
+        <span id="orn1">Görsel Eğitim Setleri</span><br /><br />
+
+        <span id="orn1" class="dort" style="margin-right: initial;">Extra Eğitim</span>
+        <span id="orn1" class="dort">Volkan Alakent</span>
+        <span id="orn1">Görsel Eğitim Setleri</span><br /><br />
+
+        <span id="orn2">
+            <span id="inherit">Extra Eğitim</span>
+        </span>
+        <span id="orn1">Görsel Eğitim Setleri</span><br /><br />
+
+        <div id="orn3"></div>
+
+        <p id="orn4"></p>
+
+        <p id="orn5"></p>
+
+    </body>
+</html>

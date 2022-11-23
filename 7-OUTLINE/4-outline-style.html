@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  outline-style :  HTML elementinin ana hat (dış çizgi) stilini belirler.
+                Değerler      :  none, hidden, solid, double, dashed, dotted, groove, ridge, inset, outset, initial, inherit
+            
+                none          : Değer yok.
+                hidden        : Gizli.
+                solid         : Düz çizgi.
+                double        : Çift çizgi.
+                dashed        : Kesikli çizgi.
+                dotted        : Noktalı çizgi.
+                groove        : İçe dönük gölgeli çizgi.
+                ridge         : Dışa dönük gölgeli çizgi.
+                inset         : İçe dönük derin çizgi. 
+                outset        : Dışa dönük derin çizgi.
+                initial       : HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit       : HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid red;
+                outline-style: double;
+            }
+            div#orn2 {
+                width: 1000px;
+                height: 100px;
+                outline-style: double;
+            }
+            div#orn3 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid red;
+                outline-style: none;
+            }
+            div#orn4 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid tomato;
+                outline-style: hidden; 
+                /* ekranda yine de görünür.
+                   parçalı halde outline özelliklerini kullanılırsa
+                   (outline-width, outline-color, outline-style)
+                   ve eğer öncesinde outline tanımlanmışsa ve sonrasında da  
+                   outline-style'de tanımlanmış ise outline-style'a tanımlanan
+                   hidden değerini alamaz. 
+                */
+            }
+            div#orn5 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px double goldenrod;
+                outline-style: solid;
+            }
+            div#orn6 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid turquoise;
+                outline-style: double;
+            }
+            div#orn7 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid rebeccapurple;
+                outline-style: dashed;
+            }
+            div#orn8 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid red;
+                outline-style: dotted;
+            }
+            div#orn9 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid royalblue;
+                outline-style: groove;
+            }
+            div#orn10 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid teal;
+                outline-style: ridge;
+            }
+            div#orn11 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid tomato;
+                outline-style: inset;
+            }
+            div#orn12 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid rosybrown;
+                outline-style: outset;
+            }
+            div#orn13 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid red;
+                
+            }
+            div#orn13 {
+                outline-style: initial;
+            }
+            div#orn14 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid violet;
+            }
+            div#orn15 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid fuchsia;
+                outline-style: dashed;
+            }
+            div#inherit {
+                width: 600px;
+                height: 80px;
+                outline-style: inherit;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div><br />
+
+        <div id="orn4"></div><br />
+
+        <div id="orn5"></div><br />
+
+        <div id="orn6"></div><br />
+
+        <div id="orn7"></div><br />
+
+        <div id="orn8"></div><br />
+
+        <div id="orn9"></div><br />
+
+        <div id="orn10"></div><br />
+
+        <div id="orn11"></div><br />
+
+        <div id="orn12"></div><br />
+
+        <div id="orn13"></div><br />
+
+        <div id="orn14" style="outline-style: initial;"></div><br />
+
+        <div id="orn15">
+            <div id="inherit"></div>
+        </div><br />
+
+        <div id="orn16"></div><br />
+
+        <div id="orn17"></div><br />
+
+        <div id="orn18"></div><br />
+
+        
+    </body>
+</html>

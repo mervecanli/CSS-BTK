@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  margin-left  :  HTML elementinin sol kenar boşluğu/dış boşluk özelliklerini belirler.
+                Değerler     :  length | % | auto | initial | inherit
+
+                length       :  Uzunluk değeri.
+                %            :  Yüzde değeri.
+                auto         :  Otomatik değer alır.
+                initial      :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit      :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 83px;
+                height: 18px;
+                border: thin solid red;
+                margin-left: 50px;
+            }
+            div#orn2 {
+                width: 83px;
+                height: 18px;
+                border: thin solid red;
+                margin-left: 50%;
+            }
+            div#orn3 {
+                width: 83px;
+                height: 18px;
+                border: thin solid red;
+                margin-left: calc(50% - 83px);
+            }
+            div#orn3 {
+                margin-left: initial;
+            }
+            div#orn4 {
+                width: 83px;
+                height: 18px;
+                border: thin solid red;
+                margin-left: calc(100% - 83px);
+            }
+            div#orn5 {
+                width: calc(100% - 85px);
+                height: 20px;
+                border: thin solid green;
+                margin-left: calc(100% - 83px);
+            }
+            div#inherit{
+                width: 83px;
+                height: 18px;
+                border: thin solid blue;
+                margin-left: inherit;
+            }
+            div#orn6 {
+                width: 83px;
+                height: 20px;
+                border: thin solid green;
+                margin-left: auto;
+            }
+            div#orn7 {
+                width: 83px;
+                height: 20px;
+                border: thin solid darkorange;
+                margin: 50px;
+                margin-left: 150px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1">Extra Eğitim</div><br />
+
+        <div id="orn2">Extra Eğitim</div><br />
+
+        <div id="orn3">Extra Eğitim</div><br />
+
+        <div id="orn4" style="margin-left: initial;">Extra Eğitim</div><br />
+
+        <div id="orn5">
+            <div id="inherit">Extra Eğitim</div>
+        </div><br />
+
+        <div id="orn6">Extra Eğitim</div><br />
+        <hr />
+
+        <div id="orn7">Extra Eğitim</div><br />
+
+    </body>
+</html>

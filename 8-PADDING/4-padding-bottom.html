@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  padding-bottom  :  HTML elementinin alt dolgu/iç boşluk özelliklerini belirler.
+                Değerler        :  length | % | initial | inherit 
+     
+                length          :  Uzunluk değeri.
+                %               :  Yüzde değeri.
+                initial         :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit         :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid blue;
+                padding-bottom: 100px;
+            }
+            div#orn2 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid blue;
+                padding-bottom: 10%;
+            }
+            div#orn3 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid blue;
+                padding-bottom: 50%;
+            }
+            div#orn3 {
+                padding-bottom: initial;
+            }
+            div#orn4 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid blue;
+                padding-bottom: calc(50% - 2px);
+            }
+            div#orn5 {
+                width: 85px;
+                height: 45px;
+                border: 1px solid red;
+                padding-bottom: 50px;
+            }
+            div#inherit {
+                width: 83px;
+                height: 18px;
+                border: 1px solid blue;
+                padding-bottom: inherit;
+            }
+            div#orn6 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid blue;
+                padding: 50px;
+                padding-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1">Extra Eğitim</div><br />
+
+        <div id="orn2">Extra Eğitim</div><br />
+
+        <div id="orn3">Extra Eğitim</div><br />
+
+        <div id="orn4" style="padding-bottom: initial;">Extra Eğitim</div><br />
+
+        <div id="orn5">
+            <div id="inherit">Extra Eğitim</div>
+        </div><br />
+
+        <div id="orn6">Extra Eğitim</div><br />
+
+    </body>
+</html>

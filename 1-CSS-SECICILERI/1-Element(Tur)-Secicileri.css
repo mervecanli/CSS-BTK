@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* div {
+    font-weight: bold;
+} */
+/* 
+p {
+    font-weight: bold;
+} */
+
+span {
+    color: red;
+    /* font-weight: bold; */
+    font-size: 12px;
+    background-color: bisque;
+}

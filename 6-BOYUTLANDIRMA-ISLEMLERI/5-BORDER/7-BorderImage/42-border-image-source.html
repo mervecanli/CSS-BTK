@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-image-source  => HTML elementinin kenarlık/çerçeve resmini belirler.
+               Değerler             => none | image | initial | inherit
+               none                 => Resim yok.
+               image                => Resim dosyası.
+               initial              => HTML elementi varsayılan biçimlendirme değerine döner.
+               inherit              => HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 400px;
+                height: 200px;
+                border: 20px solid transparent;
+                /* border-image: url("borderImage.jpg") 30 round; */
+                /* border-image: url("borderImage.jpg"); */
+                border-image-source: url("borderImage.jpg"); /* Sadece resim atanılması istenildiğinde border-image-source özelliği kullanılır. */
+            }
+            div#orn2 {
+                width: 400px;
+                height: 200px;
+                border: 20px solid transparent;
+                border-image: url("borderImage.jpg");
+                border-image-source: none; /* Eklenilen bir resmi kaldırmak için none kullanılır. */
+            }
+            div#orn3 {
+                width: 400px;
+                height: 200px;
+                border: 20px solid transparent;
+                border-image-source: url("borderImage.jpg"); 
+            }
+            div#orn3 {
+                border-image-source: initial;
+            }
+            div#orn4 {
+                width: 400px;
+                height: 200px;
+                border: 20px solid transparent;
+                border-image-source: url("borderImage.jpg"); 
+            }
+            div#inherit {
+                width: 400px;
+                height: 200px;
+                border: 20px solid transparent;
+                border-image-source: url("borderImage.jpg");
+            }
+            div#orn5 {
+                width: 300px;
+                height: 100px;
+                margin-top: 25px;
+                margin-left: 28px;
+                border: 20px solid red;
+                border-image-source: inherit;
+            }
+            div#orn6 {
+                width: 200px;
+                height: 30px;
+                margin-top: 15px;
+                margin-left: 30px;
+                border: 20px solid transparent;
+                border-image-source: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div><br />
+
+        <div id="orn4" style="border-image-source: initial;"></div><br />
+
+        <div id="inherit">
+            <div id="orn5">
+                <div id="orn6"></div>
+            </div>
+        </div><br />
+
+    </body>
+</html>

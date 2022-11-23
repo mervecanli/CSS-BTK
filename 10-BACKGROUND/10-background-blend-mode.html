@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  background-blend-mode =>    HTML elementine atanmış olan arkaplan resimlerinin karıştırma modu özelliklerini belirler.
+            Değerler              =>    normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion 
+                                        hue | saturation | color | luminosity
+
+            normal                =>    Normal.
+            multiply              =>    Çoğaltma.
+            screen                =>    Ekran.
+            overlay               =>    Kaplama.
+            darken                =>    Karartma.
+            lighten               =>    Hafifletme.
+            color-dodge           =>    Renk kaçırma.
+            color-burn            =>    Renk yakma.
+            hard-light            =>    Sert ışık.
+            soft-light            =>    Yumuşak ışık.
+            difference            =>    Fark.
+            exclusion             =>    Hariç tutma.
+            hue                   =>    Renk.
+            saturation            =>    Doyma.
+            color                 =>    Renk.
+            luminosity            =>    Parlaklık.
+        */
+
+        div#orn1 {
+            width: 1200px;
+            height: 700px;
+            border: 2px solid black;
+            background-image: url(assets/desen.jpg), url(assets/manzara.jpg);
+            background-size: 100%, 100%;
+            background-repeat: no-repeat, no-repeat;
+            /* background-blend-mode: normal; */ /* default. (hiçbir işlem yapma) */
+            /* background-blend-mode: multiply;  */
+            /* background-blend-mode: screen; */
+            /* background-blend-mode: overlay; */
+            /* background-blend-mode: lighten; */
+            /* background-blend-mode: color-dodge; */
+            /* background-blend-mode: color-burn; */
+            /* background-blend-mode: hard-light; */
+            /* background-blend-mode: soft-light; */
+            /* background-blend-mode: difference; */
+            /* background-blend-mode: exclusion; */
+            /* background-blend-mode: hue; */
+            /* background-blend-mode: saturation; */
+            /* background-blend-mode: color; */
+            background-blend-mode: luminosity;
+        }
+
+        div#orn2 {
+            width: 1200px;
+            height: 700px;
+            border: 2px solid black;
+            background-image: url(assets/desen.jpg);
+            background-color: orangered;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div id="orn1"></div> -->
+
+    <div id="orn2"></div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  background-position  :  HTML elementine atanmış olan arkaplan resminin konum özelliklerini belirler.
+                Değerler             :  length | % | position | initial | inherit 
+
+                length               :  Uzunluk değeri.
+                %                    :  Yüzde değeri.
+                position             :  Pozisyon değeri.
+                initial              :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit              :  HTML elementi üst elementinin biçimlendirme değerini alır.
+
+                Pozisyon Değerleri   :  top | right | bottom | left | center
+                top                  :  Üst.
+                right                :  Sağ.                
+                bottom               :  Alt.                
+                left                 :  Sol.                
+                center               :  Orta.
+            */
+
+            /* body {
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 100px; /* Tek parametre verildiğinde x-ekseninde yani yatay olarak verilen değer kadar resim ileri kayar. */
+            /* } */
+
+            div#orn1 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 100px;
+            }
+
+            /* body {
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 100px 80px;
+            } */
+
+            div#orn2 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 100px 50px;
+            }
+
+            /* body {
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 25%;
+            }  */
+
+            div#orn3 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 25%;
+            }
+
+            /* body {
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 80%;
+            }   */
+
+            div#orn4 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 90%;
+            }
+
+            /* body {
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                /* background-position: 50% 0%; */
+                /* background-position: 50% -60%; */
+            /*}    */
+
+            div#orn5 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% -30%;
+            }
+
+            /* body {
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                /* background-position: top center; */
+                /* background-position: top right; */
+                /* background-color: left center; */ /* center element içerisinde çalışır */
+                /* background-position: center center; */ /* element içerisinde tam ortalar */
+                /* background-position: right center; */
+                /* background-position: left bottom; */ /* element içerisnde çalışır */
+                /* background-position: bottom center; */ /* element içerisnde çalışır */
+                /* background-position: right bottom; */ /* element içerisnde çalışır */
+                /* background-position: bottom; */
+                /* background-position: right; */
+                /* background-position: left; */
+
+                /* body içerindeyken bottom ve center çalışmaz, element içerinde çalışır. */
+            /* }     */
+
+            div#orn6 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-size: 40px;
+                background-position: left center;
+            }
+
+            div#orn7 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            div#orn7 {
+                background-position: initial;
+            }
+
+            div#orn8 {
+                width: 1000px;
+                height: 500px;
+                border: 2px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: no-repeat;
+                background-position: bottom center;
+            }
+
+            div#inherit {
+                width: 500px;
+                height: 250px;
+                border: 2px solid red;
+                background-image: url(assets/manzara.jpg);
+                background-repeat: no-repeat;
+                background-size: 150px;
+                background-position: inherit;
+            }
+          
+        </style>
+    </head>
+    <body>
+
+        <!-- <div id="orn1"></div> -->
+        
+        <!-- <div id="orn2"></div> -->
+
+        <!-- <div id="orn3"></div>  -->
+
+        <!-- <div id="orn4"></div> -->
+
+        <!-- <div id="orn5"></div> -->
+
+        <!-- style="background-position:initial" --> <!-- <div id="orn7"></div> -->
+        
+        <div id="orn8">
+            <div id="inherit"></div>
+        </div>       
+
+    </body>
+</html>

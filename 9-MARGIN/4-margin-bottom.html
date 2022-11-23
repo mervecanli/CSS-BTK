@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  margin-bottom  :  HTML elementinin alt kenar boşluğu/dış boşluk özelliklerini belirler.
+                Değerler       :  length | % | auto | initial | inherit
+                     
+                length         :  Uzunluk değeri.
+                %              :  Yüzde değeri.
+                auto           :  Otomatik değer alır.
+                initial        :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit        :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid blue;
+                margin-bottom: 50px;
+            }
+            hr {
+                margin: 0;
+            }
+            div#orn2 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid blue;
+                margin-bottom: 20%;
+            }
+            div#orn3 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid blue;
+                margin-bottom: 25px;
+            }
+            div#orn3 {
+                margin-bottom: initial;
+            }
+            div#orn4 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid blue;
+                margin-bottom: 90px;
+            }
+            div#orn5 {
+                width: 87px;
+                height: 112px;
+                border: 2px solid green;
+                margin-bottom: 90px;
+            }
+            div#inherit {
+                width: 83px;
+                height: 18px;
+                border: 2px solid blue;
+                margin-bottom: inherit;
+            }
+            div#orn6 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid green;
+                margin-bottom: auto;
+            }
+            p#orn7 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid pink;
+                margin-bottom: auto;
+            }
+            div#orn8 {
+                width: 83px;
+                height: 18px;
+                border: 2px solid green;
+                margin: 55px;
+                margin-bottom: 25px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1">Extra Eğitim</div>
+        <hr />
+
+        <div id="orn2">Extra Eğitim</div>
+        <hr />
+
+        <div id="orn3">Extra Eğitim</div>
+        <hr />
+
+        <div id="orn4" style="margin-bottom: initial;">Extra Eğitim</div>
+        <hr />
+
+        <div id="orn5">
+            <div id="inherit">Extra Eğitim</div>
+        </div>
+        <hr />
+
+        <div id="orn6">Extra Eğitim</div>
+        <hr />
+
+        <p id="orn7">Extra Eğitim</p>
+        <hr />
+
+        <div id="orn8">Extra Eğitim</div>
+        <hr />
+
+    </body>
+</html>

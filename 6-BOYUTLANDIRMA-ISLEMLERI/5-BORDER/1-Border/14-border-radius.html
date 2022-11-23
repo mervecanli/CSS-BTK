@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-radius => HTML elementinin kenarlık/çerçeve köşelerinin yuvarlaklığını belirler.
+               Değerler   =>  length | % | initial | inherit 
+
+               length     =>  Uzunluk değeri.
+               %          =>  Yüzde değeri.
+               initial    =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+               inherit    =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+            */
+
+            div#orn1 {
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -o-border-radius: 20px;
+                -ms-border-radius: 20px;
+                border-radius: 20px;
+            }
+            div#orn2 {
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: 20%;
+                -moz-border-radius: 20%;
+                -o-border-radius: 20%;
+                -ms-border-radius: 20%;
+                border-radius: 20%;
+            }
+            div#orn3 {
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: 20%;
+                -moz-border-radius: 20%;
+                -o-border-radius: 20%;
+                -ms-border-radius: 20%;
+                border-radius: 20%;
+            }
+            div#orn3 {
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: initial;
+                -moz-border-radius: initial;
+                -o-border-radius: initial;
+                -ms-border-radius: initial;
+                border-radius: initial;
+            }
+            div#orn4 {
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: 20%;
+                -moz-border-radius: 20%;
+                -o-border-radius: 20%;
+                -ms-border-radius: 20%;
+                border-radius: 20%;
+            }
+            div#inherit {
+                border: 2px solid greenyellow;
+                width: 100%;
+                height: 235px;
+                -webkit-border-radius: 25%;
+                -moz-border-radius: 25%;
+                -o-border-radius: 25%;
+                -ms-border-radius: 25%;
+                border-radius: 25%;
+            }
+            p#orn5 {
+                border: 2px solid #f00;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: inherit;
+                -moz-border-radius: inherit;
+                -o-border-radius: inherit;
+                -ms-border-radius: inherit;
+                border-radius: inherit;
+            }
+            div#orn6 {
+                border:  2px solid red;
+                width: 300px; 
+                height: 300px;
+                -webkit-border-radius: 60px 100px 140px 160px;
+                -moz-border-radius: 60px 100px 140px 160px;
+                -o-border-radius: 60px 100px 140px 160px;
+                -ms-border-radius: 60px 100px 140px 160px;
+                border-radius: 60px 100px 140px 160px; /* 1. Parametre: Sol üst, 2. Parametre: Sağ üst, 3. Parametre: Sağ alt, 4. Parametre: Sol alt */
+            }
+            div#orn7 {
+                border:  2px solid red;
+                width: 300px; 
+                height: 300px;
+                -webkit-border-radius: 60px 100px 140px 160px;
+                -moz-border-radius: 60px 100px 140px 160px;
+                -o-border-radius: 60px 100px 140px 160px;
+                -ms-border-radius: 60px 100px 140px 160px;
+                border-radius: 60px 140px 10px; /* 1. Parametre: Sol üst, 2. Parametre: Sağ üst ve Sol alt, 3. Parametre: Sağ alt */
+            }
+            div#orn8 {
+                border:  2px solid red;
+                width: 300px; 
+                height: 300px;
+                -webkit-border-radius: 60px 100px 140px 160px;
+                -moz-border-radius: 60px 100px 140px 160px;
+                -o-border-radius: 60px 100px 140px 160px;
+                -ms-border-radius: 60px 100px 140px 160px;
+                border-radius: 60px 10px; /* 1. Parametre: Sol üst ve Sağ alt, 2. Parametre: Sağ üst ve Sol alt */
+            }
+            img {
+                border: 5px solid yellow;
+                border-radius: 100%;
+            }
+
+            div#user {
+                margin-bottom: 50px;
+            }
+            div#profil {
+                border: 2px solid palevioletred;
+                float: left;
+                width: 38px;
+                height: 34px;
+                border-radius: 100%;
+                text-align: center;
+                padding-top: 5px;
+                font-weight: bolder;
+                color: palevioletred;
+                font-size: 25px;
+            }
+            div#name {
+                border: 2px solid;
+                border-style: none;
+                float:left;
+                margin-left: 3px;
+                margin-top: 12px;
+                font-size: 20px;
+                font-style: italic;
+                color: gray;
+            }
+
+            div#alan {
+                border: 2px dashed gray;
+                width: 200px;
+                height: 200px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -o-border-radius: 50%;
+                -ms-border-radius: 50%;
+                border-radius: 50%;
+                position: relative;
+            }
+            div#yazi {
+                position: absolute;
+                top: 92px;
+                left: 60px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1">border-radius: 20px;</div><br />
+
+        <div id="orn2">border-radius: 20%;</div><br />
+
+        <div id="orn3">border-radius: initial;</div><br />
+
+        <div id="orn4" style="border-radius: initial;"> style="border-radius: initial;</div><br />
+        
+        <div id="inherit">
+            <p id="orn5">inherit</p>
+        </div><br /><br />
+
+        <div id="orn6">4 parametre border-radius</div><br /><br />
+
+        <div id="orn7">3 parametre border-radius</div><br /><br />
+
+        <div id="orn8">2 parametre border-radius</div><br /><br />
+
+        <img src="../3-WIDTH&HEIGHT/js.jpg" alt="js"><br /><br />
+
+        <div id="user">
+            <div id="profil">K</div><div id="name">Kübra Canlı</div>
+        </div>
+        <div id="user">
+            <div id="profil">B</div><div id="name">Büşra Canlı</div><br/>
+        </div>
+        <div id="user">
+            <div id="profil">M</div><div id="name">Merve Canlı</div>
+        </div><br/><br/><br/><br/><br/>
+
+        <div id="alan">
+            <div id="yazi">Extra Eğitim</div>
+        </div>
+    </body>
+</html>

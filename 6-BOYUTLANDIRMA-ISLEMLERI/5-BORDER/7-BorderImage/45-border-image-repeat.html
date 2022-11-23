@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-image-repeat  =>  HTML elementi kenarlık/çerçeve resminin tekrarlama özelliklerini belirler.
+                Değerler             =>  repeat | round | stretch | initial | inherit
+                repeat               =>  Tekrarla.
+                round                =>  Yuvarla.
+                stretch              =>  Uzatma & Germe & Esnet.
+                initial              =>  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit              =>  HTMl elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            p#orn1 {
+                width: 500px;
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: stretch; /* varsayılan değer stretch'dir. */
+            }
+            p#orn2 {
+                width: 500px;
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: repeat;
+            }
+            p#orn3 {
+                width: 500px;
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: round;
+            }
+            p#orn4 {
+                width: 500px;
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: round;
+            }
+            p#orn4 {
+                border-image-repeat: initial;
+            }
+            p#orn5 {
+                width: 500px;
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: round;
+            }
+            div#inherit {
+                width: 425px;
+                height: 185px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: round;
+            }
+            p#orn6 {
+                width: 300px;
+                height: 60px;
+                margin-top: 30px;
+                margin-left: 30px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px;
+                border-image-repeat: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="orn1"></p>
+
+        <p id="orn2"></p>
+
+        <p id="orn3"></p>
+
+        <p id="orn4"></p>
+
+        <p id="orn5" style="border-image-repeat: initial;"></p>
+
+        <div id="inherit">
+            <p id="orn6"></p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <!-- <link type="text/css" rel="stylesheet" href="7-Descendant(Torun-Soy)-Secici.css" > -->
+        <style>
+            /* Element (Tür) Seçici           => HTML'deki etiketleri seçerek CSS tanımlamaktır. Ör: span{color: red}
+               Genel (Evrensel) Seçici        => HTML'deki body tag'ının içerisinde yazılan tüm elementlere stil tanımlar. Ör: *{font-size:12px}
+               ID (Benzersiz Kimlik) Seçici   => HTML'deki belirtilen tag'ın içerisine tanımlanan id özelliği ile stil tanımlanır. Ör: div#firmaAdi{color:red} Ör2: #firmaAdi{color:red}
+               Class (Sınıf) Seçici           => HTML'deki belirtilen tag'ın içerisine tanımlanan class özelliği ile stil tanımlanır. Ör: div.baslik{color: red} Ör2: .baslik{color: red}
+               Child (Çocuk) Seçici           => HTML'de tag içerisinde başka bir tag varsa içteki tag üstteki tag'a child durumundadır. Ör: ul > li{color: red} Ör2: ul > li#deger2{color: red} Ör3: div > span > p {color: red}
+               Descendant (Torun-Soy) Seçici  => HTML'de tab içerisinde en az iki tag varsa iki atındaki tag'dan itibaren olan tag'lar en üstteki tag'a descendant durumundadır. Ör: ul span{color: red} Ör2: div a.demo{color: red}
+            */
+
+
+            /* div > a {
+                color: red;
+                text-decoration: none;
+            } */
+
+            /* div a {
+                color: red;
+                text-decoration: none;
+            }  */
+
+            /* ul span {
+                color: red;
+            } */
+
+            .renkli {
+                color: red;
+            } 
+
+            ul span {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <span>HTML</span> Eğitim Seti
+            </li>
+            <li id="deneme">
+                <span class="renkli">CSS</span> Eğitim Seti
+            </li>
+            <li>
+                <span>JAVASCRIPT</span> Eğitim Seti
+            </li>
+            <li>
+                <span>PHP</span> Eğitim Seti
+            </li>
+            <li>
+                <span>SEO</span> Eğitim Seti
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <span>HTML</span> Eğitim Seti
+            </li>
+            <li>
+                <span>CSS</span> Eğitim Seti
+            </li>
+            <li>
+                <span>JAVASCRIPT</span> Eğitim Seti
+            </li>
+            <li>
+                <span>PHP</span> Eğitim Seti
+            </li>
+            <li>
+                <span class="renkli">SEO</span> Eğitim Seti
+            </li>
+        </ul>
+
+
+
+
+
+
+        <!-- <ul>
+            <li>
+                <span>HTML</span> Eğitim Seti
+            </li>
+            <li>
+                <span>CSS</span> Eğitim Seti
+            </li>
+            <li>
+                <span>JAVASCRIPT</span> 
+                <span>
+                    Eğitim 
+                    <span>
+                        <span>
+                            <span>
+                                <span>
+                                    Seti
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </li>
+            <li>
+                <span>PHP</span> Eğitim Seti
+            </li>
+            <li>
+                <span>SEO</span> Eğitim Seti
+            </li>
+        </ul> -->
+
+
+
+
+        <!-- <div>
+            <a href="https://www.extraegitim.com" target="_top">Extra Eğitim</a><br />
+            <p>
+                <span>
+                    <a href="https://www.google.com" target="_top">Google</a>
+                </span><br />
+            </p>
+            <a href="https://www.n11.com" target="_top">N11</a>
+        </div> -->
+    </body>
+</html>

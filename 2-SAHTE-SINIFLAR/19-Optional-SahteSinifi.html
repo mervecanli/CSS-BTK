@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link       => Daha önce hiç açılmamış link'in rengini tanımlar. 
+               :hover      => Belirtilen HTML elementinin mouse mouse ile üzerine gelindiğinde stil tanımlar. Belirtilen HTML elementinin mouse ile üzerinden ayrıldığında stil normale döner.
+               :active     => Belirtilen HTML elementi aktif olduğunda stil tanımlanır.
+               :visited    => Daha önce açılmış linkin rengini tanımlar.
+               :any-link   => Doküman içerisinde bulunan HTML'in link elementinin/elementlerinin URL değeri boş değilse stil tanımlar. 
+               :focus      => Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementinin odağından çıkıldığında stil normale döner.
+               :lang()     => Belirtilen HTML elementinin lang (dil) özelliğine göre stil tanımlaması yapar.
+               :target     => Belirtilen HTML elementine çapa türündeki linklerle bağlanmış olan ve tıklandığında hedeflenmiş olan elemente stil tanımlaması yapar.
+               :root       => HTML belgesinin kök(=html) elementine stil tanımlar. 
+               :empty      => Belirtilen HTML elementinin içeriği tamamen boş ise stil tanımlaması yapar.
+               :not()      => Belirtilen HTML elementi HARİÇ, diğer tüm HTML elementlerine stil tanımlar.
+               :checked    => Belirtilen HTML elementi seçildiğinde stil tanımlar. Belirtilen HTML elementi seçimi kaldırıldığında stil normale döner.
+               :disabled   => Belirtilen HTML elementi etkin olmadığında stil tanımlar.
+               :enabled    => Belirtilen HTML elementi etkin olduğunda stil tanımlar. 
+               :read-only  => Belirtilen HTML elementi sadece okunabilir olduğunda stil tanımlar.
+               :read-write => Belirtilen HTML elementi okunabilir ve yazılabilir(düzenlenebili) olduğunda stil tanımlar.
+               :required   => Belirtilen HTML elementine bilgi girişi zorunlu olduğunda stil tanımlar. 
+               :optional   => Belirtilen HTML elementine bilgi girişi opsiyonel olduğunda stil tanmlaması yapar.
+            */
+            input[type="text"]:optional{
+                border: 2px solid #FF0000;
+                width: 100%;
+                height: 30px;
+                color: rebeccapurple;
+                background-color: aquamarine;
+                font-size: 20px;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <form action="https://www.google.com.tr/search" method="get">
+            <div>Google'da aranacak değer:</div> 
+            <input type="text" name="q"><br /><br />
+            <input type="submit" value="Gönder">
+        </form>
+    </body>
+</html>

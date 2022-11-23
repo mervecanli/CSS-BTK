@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  outline-color : HTML elementinin ana hat rengini belirler.
+                Değerler      : color | invert | initial | inherit
+
+                color         : Renk.
+                invert        : Ters çevir.
+                initial       : HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit       : HTML elementi üst elementinin biçimlendirme değerini alır.
+            
+                border'da tüm kenarlara farklı renkler verilebilir 
+                ancak outline'ın tüm kenarları aynı renktir.
+            
+            */
+
+            div#orn1 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid red;
+                outline-color: blue;
+            }
+            div#orn2 {
+                width: 1000px;
+                height: 100px;
+                outline: 4px solid;
+                outline-color: aquamarine;
+            }
+            div#orn3 {
+                width: 1000px;
+                height: 100px;
+                background-color: blue;
+                outline: 20px solid pink;
+            }
+            div#orn4 {
+                width: 1000px;
+                height: 100px;
+                outline: 20px solid red;
+                outline-color: invert;
+            }
+            div#orn5 {
+                width: 1000px;
+                height: 100px;
+                outline: 10px solid red;
+                outline-color: invert;
+            }
+            div#orn5 {
+                width: 1000px;
+                height: 100px;
+                outline: 10px solid red;
+                outline-color: initial;
+            }
+            div#orn6 {
+                width: 1000px;
+                height: 100px;
+                outline: 10px solid red;
+            }
+            div#orn7 {
+                width: 1000px;
+                height: 100px;
+                outline: 10px solid red;
+                outline-color: blueviolet;
+            }
+            div#inherit {
+                width: 500px;
+                height: 50px;
+                outline: 3px solid;
+                outline-color: inherit;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div>
+
+        <div id="orn4"></div><br /><br /><br /><br /><br />
+
+        <div id="orn5"></div><br /><br /><br /><br /><br />
+
+        <div id="orn6" style="outline-color: initial;"></div><br /><br /><br /><br /><br />
+
+        <div id="orn7">
+            <div id="inherit"></div>
+        </div><br /><br /><br /><br /><br /><br />
+
+    </body>
+</html>

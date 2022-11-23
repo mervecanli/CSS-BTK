@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-style => HTML elementinin kenarlık/çerçeve stilini belirler.
+               Değerler   =>  none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset & initial & inherit
+              
+               none       =>  Değer yok.         
+               hidden     =>  Gizli.           
+               solid      =>  Düz çizgi.          
+               double     =>  Çift çizgi.           
+               dashed     =>  Kesikli çizgi.          
+               dotted     =>  Noktalı çizgi.
+               groove     =>  İçe dönük gölgeli çizgi.
+               ridge      =>  Dışa dönük gölgeli çizgi.
+               inset      =>  İçe dönük derin çizgi.
+               outset     =>  Dışa dönük derin çizgi. 
+               initial    =>  HTML elementi varsayılan biçimlendirme değerine döner.
+               inherit    =>  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            span#orn1 {
+                border-style: solid;
+                border-width: 4px;
+                border-color: red;
+            }
+            span#orn2 {
+                border-style: solid;
+            }
+            span#orn3 {
+                border-style: double;
+            }
+            span#orn4 {
+                border-style: dashed;
+            }
+            span#orn5 {
+                border-style: dotted;
+            }
+            span#orn6 {
+                border-width: 4px;
+                border-style: groove;
+            }
+            span#orn7 {
+                border-width: 4px;
+                border-style: ridge;
+            }
+            span#orn8 {
+                border-width: 4px;
+                border-style: inset;
+            }
+            span#orn9 {
+                border-width: 4px;
+                border-style: outset;
+            }
+            span#orn10 {
+                border-style: none;
+            }
+            span#orn11 {
+                border-style: hidden;
+            }
+            span#orn12 {
+                border-style: outset;
+            }
+            span#orn12 {
+                border-style: initial;
+            }
+            div#inherit {
+                border-style: outset;
+            }
+            span#orn13 {
+                border-style: inherit;
+            }
+            span#orn14 {
+                border-style: solid dotted ridge inset; /* 1. Parametre: Üst, 2. Parametre: Sağ, 3. Parametre: Alt, 4. Parametre: Sol */
+                border-width: 8px;
+            }
+            span#orn15 {
+                border-style: solid dotted ridge; /* 1. Parametre: Üst, 2. Parametre: Sağ ve Sol, 3. Parametre: Alt */
+                border-width: 8px;
+            }
+            span#orn16 {
+                border-style: solid dotted; /* 1. Parametre: Üst ve Alt, 2. Parametre: Sağ ve Sol */
+                border-width: 8px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <span id="orn1">border-style: solid;</span><br /><br />
+
+        <span id="orn2">border-style: solid;</span><br /><br />
+
+        <span id="orn3">border-style: double;</span><br /><br />
+
+        <span id="orn4">border-style: dashed;</span><br /><br />
+
+        <span id="orn5">border-style: dotted;</span><br /><br />
+
+        <span id="orn6">border-style: groove;</span><br /><br />
+
+        <span id="orn7">border-style: ridge;</span><br /><br />
+
+        <span id="orn8">border-style: inset;</span><br /><br />
+
+        <span id="orn9">border-style: outset;</span><br /><br />
+
+        <span id="orn10">border-style: none;</span><br /><br />
+
+        <span id="orn11">border-style: hidden;</span><br /><br />
+
+        <span id="orn12">border-style: initial;</span><br /><br />
+
+        <div id="inherit">
+            <span id="orn13">border-style: inherit;</span>
+        </div><br /><br />
+
+        <span id="orn14">4 parametreli border-style</span><br /><br /><br /><br />
+
+        <span id="orn15">3 parametreli border-style</span><br /><br /><br /><br />
+
+        <span id="orn16">2 parametreli border-style</span><br /><br /><br /><br />
+
+    </body>
+</html>

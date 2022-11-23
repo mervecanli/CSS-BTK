@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link     => Daha önce hiç açılmamış link'in rengini tanımlar. 
+               :hover    => Belirtilen HTML elementinin mouse mouse ile üzerine gelindiğinde stil tanımlar. Belirtilen HTML elementinin mouse ile üzerinden ayrıldığında stil normale döner.
+               :active   => Belirtilen HTML elementi aktif olduğunda stil tanımlanır.
+               :visited  => Daha önce açılmış linkin rengini tanımlar.
+               :any-link => Doküman içerisinde bulunan HTML'in link elementinin/elementlerinin URL değeri boş değilse stil tanımlar. 
+               :focus    => Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementinin odağından çıkıldığında stil normale döner.
+            */
+            
+            /* input:hover {
+                background-color: blue ;
+            } */
+            /*
+            input:focus {  focus daha çok input alanlarında kullanılır ancak html in diğer tag'larında da kullanılabilinir
+                background-color: aquamarine;
+            } */
+
+            div:focus {
+                background-color: aquamarine;
+            }
+
+            :focus {
+                background-color: yellowgreen;
+            }
+            input:active{
+                background-color: palevioletred;
+            }
+            div:hover {
+                background-color: purple;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <input tabindex="3" type="text" ><br />
+        <div tabindex="5">HTML</div>
+        <div tabindex="7">CSS</div>
+        <input tabindex="6" type="text" ><br />
+        <div tabindex="2">JAVASCRIPT</div>
+        <div tabindex="8">SEO</div>
+        <input tabindex="1" type="text" ><br />
+        <input tabindex="4" type="text" ><br />
+
+        <!-- <div tabindex="1">HTML</div>
+        <div tabindex="4">CSS</div>
+        <div tabindex="3">JAVASCRIPT</div>
+        <div tabindex="2">SEO</div> -->
+
+        <!-- <input type="text" ><br />
+        <input type="text" ><br />
+        <input type="text" ><br />
+        <input type="text" ><br />
+        <input type="text" ><br />
+        <input type="text" ><br />
+        <input type="text" ><br /> -->
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* Element (Tür) Seçici                                      => HTML'deki etiketleri seçerek CSS tanımlamaktır. Ör: span{color: red}
+               Genel (Evrensel) Seçici                                   => HTML'deki body tag'ının içerisinde yazılan tüm elementlere stil tanımlar. Ör: *{font-size:12px}
+               ID (Benzersiz Kimlik) Seçici                              => HTML'deki belirtilen tag'ın içerisine tanımlanan id özelliği ile stil tanımlanır. Ör: div#firmaAdi{color:red} Ör2: #firmaAdi{color:red}
+               Class (Sınıf) Seçici                                      => HTML'deki belirtilen tag'ın içerisine tanımlanan class özelliği ile stil tanımlanır. Ör: div.baslik{color: red} Ör2: .baslik{color: red}
+               Child (Çocuk) Seçici                                      => HTML'de tag içerisinde başka bir tag varsa içteki tag üstteki tag'a child durumundadır. Ör: ul > li{color: red} Ör2: ul > li#deger2{color: red} Ör3: div > span > p {color: red}
+               Descendant (Torun-Soy) Seçici                             => HTML'de tab içerisinde en az iki tag varsa iki atındaki tag'dan itibaren olan tag'lar en üstteki tag'a descendant durumundadır. Ör: ul span{color: red} Ör2: div a.demo{color: red}
+               Genel Kardeş (Sibling) Seçici                             => HTML'de belirtilen tag'ın alt hizasında belirtilen tag varsa alttaki tag'lar üstteki tag'a genel kardeş durumunda olur. Ör: div ~ h3{color: red}
+               Bitişik Kardeş (Sibling) Seçici                           => HTML'de belirtilen tag'ın hemen altında bitişik olarak bulunan belirtilen tag varsa alttaki tag üstte tag'a bitişik katdeş durumundadır. Ör: div + h3{color: red} Ör2: div#deneme + h3.boya{color: red}
+               Multiple (Çoklu) Seçici                                   => Birden fazla farklı HTML tag'ına stil uygulanması istenildiğinde HTML tag'ları arasına virgül konularak kullanılabilir. Ör: h3,li,div{color: red} Ör2: p#boya,div#ders{color: red}
+               Attribute (Özellik) Seçici                                => HTML tagı ile özellik seçilebilir ve bu seçilen özellik üzerinden CSS uygulanabilir. Ör: h2[name],li[name]{color: red} Ör2: li[dropzone]{color: red}
+               (Att.Özllk.Sec)Tam Değer Filtre                           => Belirtilen filtrenin BİRE BİR UYMASI GEREKİR. Ör:li>span[name="isaretleme"],span[name="optimizasyon"]{color: red} Ör2: div[name="bicim"]{color: red}
+               (Att.Özllk.Sec)İçeren Tam Değer Filtre                    => Belirtilen filtre, belirtilen seçicinin İÇERİSİNDE BULUNUP TAM EŞLEŞMESİ GEREKİR. Ör: div[title ~= "isim" i]{color: red} Ör2:  div[title="bu bir isim kelimesidir"]{color: red}
+               (Att.Özllk.Sec)İçeren Değer Filtre                        => Belirtilen filtre, belirtilen seçicinin İÇERİSİNDE HERHANGİ BİR YERDE BULUNABİLİR. ör: div[title *= "isim"]{color: red} Ör2: [title *= "k"]{color: red}
+               (Att.Özllk.Sec)Başlayan Değer Filtre                      => Belirtilen filtre, belirtilen seçicinin BAŞINDA BULUNMALIDIR. Ör: div[name ^= "m"]{{color: red} Ör2: div[title ^= "be" i]{color: red}
+               (Att.Özllk.Sec)Tireli veya Tiresiz Başlayan Değer Filtre  => En çok dil filtresinde kullanılabilir. Ya belirtilen karakterle başlayacak ya da belirtilen karakter tire ile başlayacak anlamına gelir. Ör: div[lang |= "en"]{color: red}
+               (Att.Özllk.Sec)Biten Değer Filtre                         => Belirtilen filtre, belirtilen seçicinin EN SONUNDA OLMALIDIR. Ör: div[id $= "secenek"]{color: red} 
+           */
+
+
+            /* div[id $= "secenek"] {
+                color:crimson;
+            } */
+            /* div[id $= "secenek" i] {
+                color:crimson;
+            } */
+            div[id $= "i"] {
+                color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="bir">HTML</div>
+        <div id="iki">JAVASCRIPT</div>
+        <div id="uc">CSS</div>
+        <div id="dort">PHP</div>
+        <div id="bes">ASP</div>
+        <div id="alti">RUBY</div>
+        <div id="yedi">PYTHON</div>
+
+
+        <!-- <div id="birinciSecenek">HTML</div>
+        <div id="ikinciSecenek">JAVASCRIPT</div>
+        <div id="ucuncuSecenek">CSS</div>
+        <div id="dorduncuSecnek">PHP</div>
+        <div id="besinciSecenek">ASP</div>
+        <div id="altinciSecenek">RUBY</div>
+        <div id="yedinciSecenek">PYTHON</div> -->
+
+    </body>
+</html>

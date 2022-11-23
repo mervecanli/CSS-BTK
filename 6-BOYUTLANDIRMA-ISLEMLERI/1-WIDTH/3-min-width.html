@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  min-width    => HTML elementinin minimum genişliğini belirler.
+                Değerler     => length | % | initial | inherit
+                    length   => Uzunluk değeri
+                    %        =>  Yüzde değeri
+                    initial  => HTML elementi varsayılan biçimlendirme değerine döner.
+                    inherit  => HTMl elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            /* div {
+                background-color: yellow;
+                min-width: 1000px;
+            } */
+
+            /* div#bir {
+                background-color: yellow;
+                width: 1000px;
+            }
+            div#iki {
+                background-color: aquamarine;
+                min-width: 1500px;
+            }  */
+
+            /* div {
+                background-color: yellow;
+                min-width: 50%;
+            } */
+
+            /* div#bir {
+                background-color: yellow;
+                width: 80%;
+            }
+            div#iki {
+                background-color: aquamarine;
+                min-width: 50%;
+            }  */
+
+            /* div {
+                background-color: yellow;
+                min-width: 1000px;
+            }
+            div {
+                min-width: initial;
+            } */
+
+            div#bir {
+                background-color: blue;
+                min-width: 50%;
+            }
+            div#iki {
+                background-color: yellow;
+                min-width: inherit;
+            }
+
+            
+
+
+        </style>
+    </head>
+    <body>
+        <!-- <div style="min-width: initial;">Extra Eğitim - Volkan Alakent</div> -->
+
+        <div id="bir">
+            <div id="iki">Extra Eğitim - Volkan Alakent</div>
+        </div>  
+
+       <!-- <div>Extra Eğitim - Volkan Alakent</div>  -->
+    </body>
+</html>

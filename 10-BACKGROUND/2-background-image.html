@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  background-image  :  HTML elementinin arka plan resmini belirler.
+                Değerler          :  none | image | initial | inherit  
+
+                none              :  Değer yok. 
+                image             :  Resim.
+                initial           :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit           :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            body {
+                /* background-image: url(assets/desen.jpg);  */
+                background-image: url(assets/manzara.jpg);
+            } 
+
+            /* div#orn1 {
+                width: 1500px;
+                height: 300px;
+                border: 2px solid green;
+                background-image: url(assets/desen.jpg);
+            } */
+
+            div#orn2 {
+                width: 1500px;
+                height: 300px;
+                border: 2px solid green;
+                background-image: none; /* default olarak none değerini alır */
+            }
+            body {
+                background-image: initial;
+            }
+            div#orn3 {
+                width: 1500px;
+                height: 300px;
+                border: 2px solid green;
+                background-image: url(assets/manzara.jpg);
+            }
+            div#orn4 {
+                width: 1500px;
+                height: 450px;
+                border: 2px solid red;
+                background-image: url(assets/manzara.jpg);
+            }
+            div#inherit {
+                width: 500px;
+                height: 200px;
+                border: 2px solid orange;
+                margin: 0 auto;
+                margin-top: 50px;
+                background-image: inherit;
+            }
+            div#orn5 {
+                width: 1500px;
+                height: 450px;
+                background-color: red;
+                background-image: url(assets/desen.jpg);
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- <div id="orn1"></div> -->
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3" style="background-image: initial;"></div><br /><br /><br /><br />
+
+        <div id="orn4">
+            <div id="inherit"></div>
+        </div><br /><br /><br /><br />
+
+        <div id="orn5"></div>
+        
+    </body>
+</html>

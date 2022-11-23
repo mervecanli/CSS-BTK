@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-image-slice   =>  HTML elementi kenarlık/çerçeve resminin dilimleme özelliklerini belirler.
+               Değerler             =>  length | % | fill | initial | inherit
+               length               =>  Uzunluk değeri.
+               %                    =>  Yüzde değeri.
+               fill                 =>  Doldurma.
+               initial              =>  HTML elementi varsayılan biçimlendirme değerine döner.
+               inherit              => HTMl elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            p#orn1{
+                width: 400px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+            }
+            p#orn2 {
+                width: 400px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 10%;
+            }
+            p#orn3 {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 20% fill;
+            }
+            p#orn4 {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 20 fill;
+            }
+            p#orn5 {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 20% 25% fill;
+            }
+            p#orn6 {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 20% 25% fill;
+            }
+            p#orn7 {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+            }
+            p#orn7 {
+                border-image-slice: initial;
+            } 
+            p#orn8 {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+            }
+            div#inherit {
+                width: 200px;
+                height: 200px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 40;
+            }
+            p#orn9 {
+                width: 100px;
+                height: 80px;
+                margin-top: 10px;
+                margin-left: 10px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="orn1"></p>
+
+        <p id="orn2"></p>
+
+        <p id="orn3"></p>
+
+        <p id="orn4"></p>
+
+        <p id="orn5"></p>
+
+        <p id="orn6"></p>
+
+        <p id="orn7"></p>
+
+        <p id="orn8" style="border-image-slice: initial;"></p>
+
+        <div id="inherit">
+            <p id="orn9"></p>
+        </div>
+
+    </body>
+</html>

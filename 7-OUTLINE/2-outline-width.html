@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  outline-width  => HTML elementinin ana hat (dış çizgi) genişliğini belirler.
+            Değerler       => length & thin & medium & thick & initial & inherit 
+
+            length         => Uzunluk değeri.
+            thin           => İnce.
+            medium         => Orta.
+            thick          => Kalın.
+            initial        => HTML elementi varsayılan biçimlendirme değerine döner.
+            inherit        => HTML elementi üst elementinin biçimlendirme değerini alır.
+        */
+
+        div#orn1 {
+            width: 1000px;
+            height: 100px;
+            outline: 4px solid red;
+            outline-width: 2px;
+        }
+        div#orn2 {
+            width: 1000px;
+            height: 100px;
+            outline: solid blue;
+            outline-width: 5px;
+        }
+        div#orn3 {
+            width: 1000px;
+            height: 100px;
+            outline: solid;
+            outline-width: 3px;
+        }
+        div#orn4 {
+            width: 1000px;
+            height: 100px;
+            outline: 10px solid red;
+            outline-width: thin;
+        }
+        div#orn5 {
+            width: 1000px;
+            height: 100px;
+            outline: 10px solid red;
+            outline-width: medium;
+        }
+        div#orn6 {
+            width: 1000px;
+            height: 100px;
+            outline: 10px solid red;
+            outline-width: thick;
+        }
+        div#orn7 {
+            width: 1000px;
+            height: 100px;
+            outline: 10px solid red;
+            outline-width: thick;
+        }
+        div#orn7 {
+            outline-width: initial;
+        }
+        div#orn8 {
+            width: 1000px;
+            height: 100px;
+            outline: 10px solid red;
+            outline-width: thick;
+        }
+        div#orn9 {
+            width: 1000px;
+            height: 100px;
+            outline: 10px solid red;
+            outline-width: thin;
+        }
+        p#inherit {
+            width: 600px;
+            height: 38px;
+            outline: 4px solid green;
+            outline-width: inherit;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="orn1"></div><br />
+
+    <div id="orn2"></div><br />
+
+    <div id="orn3"></div><br />
+
+    <div id="orn4"></div><br />
+
+    <div id="orn5"></div><br />
+
+    <div id="orn6"></div><br />
+
+    <div id="orn7"></div><br />
+
+    <div id="orn8" style="outline-width: initial;"></div><br />
+
+    <div id="orn9">
+        <p id="inherit">dsa</p>
+    </div><br />
+    
+</body>
+</html>

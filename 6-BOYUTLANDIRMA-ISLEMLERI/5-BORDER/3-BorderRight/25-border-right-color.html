@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-right-color    =>  HTML elementinin SAĞ kenarlık/çerçeve rengini belirler.
+                Değerler   =>  color | transparent | initial | inherit
+
+                color      =>  Renk. (rgb, ...)
+                transparent => Transparan değeri. Şeffaf.
+                initial    =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+                inherit    =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+            */
+
+            p#orn1 {
+                width: 500px;
+                height: 50px;
+                border: 5px dashed rgb(255,0,0,1.0);
+                border-right-color: #7d62c9;
+            }
+            p#orn2 {
+                width: 500px;
+                height: 50px;
+                border: 9px dotted fuchsia;
+                border-right-color: transparent; /*border kalır ama göremeyiz, şeffat olur, trasnparan olur. */
+            }
+            p#orn3 {
+                width: 500px;
+                height: 50px;
+                border: 5px double turquoise;
+                border-right-color: initial;
+            }
+            p#orn4 {
+                width: 500px;
+                height: 50px;
+                border: 7px dotted seagreen;
+            }
+            div#inherit {
+                width: 500px;
+                height: 50px;
+                border: 7px solid #7d62c9;
+            }
+            p#orn5 {
+                width: 480px;
+                height: 20px;
+                border: 5px double palegreen;
+                border-right-color: inherit;
+                border-right-style: inherit;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p id="orn1"></p>
+
+        <p id="orn2"></p>
+
+        <p id="orn3"></p>
+
+        <p id="orn4" style="border-right-color: initial;"></p>
+
+        <div id="inherit">
+            <p id="orn5"></p>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-top-style  =>  HTML elementinin ÜST kenarlık/çerçeve stilini belirler.
+               Değerler          =>  none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset & initial & inherit
+       
+               none              =>  Değer yok.         
+               hidden            =>  Gizli.           
+               solid             =>  Düz çizgi.          
+               double            =>  Çift çizgi.           
+               dashed            =>  Kesikli çizgi.          
+               dotted            =>  Noktalı çizgi.
+               groove            =>  İçe dönük gölgeli çizgi.
+               ridge             =>  Dışa dönük gölgeli çizgi.
+               inset             =>  İçe dönük derin çizgi.
+               outset            =>  Dışa dönük derin çizgi. 
+               initial           =>  HTML elementi varsayılan biçimlendirme değerine döner.
+               inherit           =>  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            p#orn1 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: none;
+            }
+            p#orn2 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: hidden;
+            }
+            p#orn3 {
+                width: 500px;
+                height: 50px;
+                border: 10px dashed red;
+                border-top-style: solid;
+            }
+            p#orn4 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: double;
+            }
+            p#orn5 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: dashed;
+            }
+            p#orn6 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: dotted;
+            }
+            p#orn7 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: groove;
+            }
+            p#orn8 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: ridge;
+            }
+            p#orn9 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: inset;
+            }
+            p#orn10 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: outset;
+            }
+            p#orn11 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+                border-top-style: initial;
+            }
+            p#orn12 {
+                width: 500px;
+                height: 50px;
+                border: 10px solid red;
+            }
+            div#inherit {
+                width: 500px;
+                height: 50px;
+                border: 3px solid darkblue;
+            }
+            p#orn13 {
+                width: 200px;
+                height: 20px;
+                border: 4px dotted darkcyan;
+                border-top-style: inherit;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p id="orn1">none</p>
+
+        <p id="orn2">hidden</p>
+
+        <p id="orn3">solid</p>
+
+        <p id="orn4">double</p>
+
+        <p id="orn5">dashed</p>
+
+        <p id="orn6">dotted</p>
+
+        <p id="orn7">groove</p>
+
+        <p id="orn8">ridge</p>
+
+        <p id="orn9">inset</p>
+
+        <p id="orn10">outset (outset ile sağ ve alt border'a stil tanımlandığı için üst borderda yokmuş gibi duruyor)</p>
+
+        <p id="orn11">initial</p>
+
+        <p id="orn12" style="border-top-style: initial;">satır içi initial</p>
+
+        <div id="inherit">
+            <p id="orn13">inherit</p>
+        </div>
+
+    </body>
+</html>

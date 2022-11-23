@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link     => Daha önce hiç açılmamış link'in rengini tanımlar. 
+               :hover    => Belirtilen HTML elementinin mouse mouse ile üzerine gelindiğinde stil tanımlar. Belirtilen HTML elementinin mouse ile üzerinden ayrıldığında stil normale döner.
+               :active   => Belirtilen HTML elementi aktif olduğunda stil tanımlanır.
+               :visited  => Daha önce açılmış linkin rengini tanımlar.
+               :any-link => Doküman içerisinde bulunan HTML'in link elementinin/elementlerinin URL değeri boş değilse stil tanımlar. 
+               :focus    => Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementinin odağından çıkıldığında stil normale döner.
+               :lang()   => Belirtilen HTML elementinin lang (dil) özelliğine göre stil tanımlaması yapar.
+               :target   => Belirtilen HTML elementine çapa türündeki linklerle bağlanmış olan ve tıklandığında hedeflenmiş olan elemente stil tanımlaması yapar.
+               :root     => HTML belgesinin kök(=html) elementine stil tanımlar. 
+               :empty    => Belirtilen HTML elementinin içeriği tamamen boş ise stil tanımlaması yapar.
+               :not()    => Belirtilen HTML elementi HARİÇ, diğer tüm HTML elementlerine stil tanımlar.
+            */
+
+            /* NOT: not() sahte seçici sınıfını kullanırken belirtilen tag hariç
+            diğer tüm elementlere stil tanımlaması yapılması gerekiyorsa 
+            ÖNCE HARİÇ TUTULAN ELEMENTE MUHAKKAK BİR STİL TANIMLAMASI YAPILMALIDIR. */
+             
+            /* :not(li) { tek başına hatalı / eksik kullanım
+                color: red;
+            } */
+
+            li{
+                color: blue;
+            } 
+            :not(li) {
+                color: red;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h3>Extra Eğitim</h3>
+        <div>Volkan Alakent</div>
+        <p>A'dan Z'ye Görsel Eğitim Setleri</p>
+        <ul>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>CSS</li>
+            <li>PHP</li>
+        </ul>
+    </body>
+</html>

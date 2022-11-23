@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link     => Daha önce hiç açılmamış link'in rengini tanımlar. 
+               :hover    => Belirtilen HTML elementinin mouse mouse ile üzerine gelindiğinde stil tanımlar. Belirtilen HTML elementinin mouse ile üzerinden ayrıldığında stil normale döner.
+               :active   => Belirtilen HTML elementi aktif olduğunda stil tanımlanır.
+               :visited  => Daha önce açılmış linkin rengini tanımlar.
+               :any-link => Doküman içerisinde bulunan HTML'in link elementinin/elementlerinin URL değeri boş değilse stil tanımlar. 
+               :focus    => Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementinin odağından çıkıldığında stil normale döner.
+               :lang()   => Belirtilen HTML elementinin lang (dil) özelliğine göre stil tanımlaması yapar.
+               :target   => Belirtilen HTML elementine çapa türündeki linklerle bağlanmış olan ve tıklandığında hedeflenmiş olan elemente stil tanımlaması yapar.
+            */
+    
+            /* :target {
+                color: red;
+                background-color: cornflowerblue;
+            } */
+
+            ul[id="volkanindersi"]:target {
+                color: whitesmoke;
+                background-color: blueviolet;
+            }
+            ul[id="hakanindersi"]:target {
+                color: blueviolet;
+                background-color: beige;
+            }
+
+        </style>
+    </head>
+    <body>
+       <h3>Extra Eğitim</h3>
+       <div><a href="#volkanindersi">Volkan Alakent</a></div>
+       <div><a href="#hakanindersi">Hakan Alakent</a></div> 
+
+       <ul id="volkanindersi">
+            <li >HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>XML</li>
+            <li>PHP</li>
+       </ul>
+
+       <br /> <br /> <br />
+       <ul id="hakanindersi">
+            <li>3Ds Max</li>
+            <li>Maya</li>
+            <li>Photoshop</li>
+            <li>Cinema 4D</li>
+            <li>XBrush</li>
+       </ul>
+
+    </body>
+</html>

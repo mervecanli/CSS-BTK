@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link => Daha önce hiç açılmamış link'in rengini tanımlar. */
+            
+            /* a:link {
+                color: red;
+                text-decoration: none;
+            } */
+
+            /* a[id='kimlik']:link{
+                color: red;
+                text-decoration: none;
+            } */
+
+            a[href*="twitter"]:link {
+                color: red;
+                text-decoration: none;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- <a id="kimlik" href="https://www.twitter.com">Twitter</a><br /> -->
+        <a href="https://www.twitter.com">Twitter</a><br />
+        <a href="https://www.facebook.com">Facebook</a><br />
+        <a href="https://www.yandex.com">Yandex</a><br />
+        
+    </body>
+</html>

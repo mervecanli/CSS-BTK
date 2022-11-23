@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-right-style  =>  HTML elementinin SAĞ kenarlık/çerçeve özelliğini belirler.
+                Değerler            => none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset & initial & inherit
+
+                none                =>  Değer yok.         
+                hidden              =>  Gizli.           
+                solid               =>  Düz çizgi.          
+                double              =>  Çift çizgi.           
+                dashed              =>  Kesikli çizgi.          
+                dotted              =>  Noktalı çizgi.
+                groove              =>  İçe dönük gölgeli çizgi.
+                ridge               =>  Dışa dönük gölgeli çizgi.
+                inset               =>  İçe dönük derin çizgi.
+                outset              =>  Dışa dönük derin çizgi. 
+                initial             =>  HTML elementi varsayılan biçimlendirme değerine döner.  
+                inherit             =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+            */
+
+            p#orn1 {
+                width: 500px;
+                height: 60px;
+                border: 8px solid red;
+                border-right-style: none;
+            }
+            p#orn2 {
+                width: 500px;
+                height: 60px;
+                border: 8px solid red;
+                border-right-style: hidden;
+            }
+            p#orn3 {
+                width: 500px;
+                height: 60px;
+                border: 8px dotted red;
+                border-right-style: solid;
+            }
+            p#orn4 {
+                width: 500px;
+                height: 60px;
+                border: 8px solid red;
+                border-right-style: double;
+            }
+            p#orn5 {
+                width: 500px;
+                height: 60px;
+                border: 8px solid red;
+                border-right-style: dashed;
+            }
+            p#orn6 {
+                width: 500px;
+                height: 60px;
+                border: 8px solid red;
+                border-right-style: dotted;
+            }
+            p#orn7 {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+                border-right-style: groove;
+            }
+            p#orn8 {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+                border-right-style: ridge;
+            }
+            p#orn9 {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+                border-right-style: inset; 
+            }
+            p#orn10 {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+                border-right-style: outset;
+            }
+            p#orn11 {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+                border-right-style: initial;
+            }
+            p#orn12 {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+            }
+            div#inherit {
+                width: 500px;
+                height: 60px;
+                border: 10px solid red;
+                border-right-style: dotted;
+            }
+            p#orn13 {
+                width: 450px;
+                height: 25px;
+                border: 6px solid blue;
+                border-right-style: inherit;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p id="orn1">none</p>
+
+        <p id="orn2">hidden</p>
+
+        <p id="orn3">solid</p>
+
+        <p id="orn4">double</p>
+
+        <p id="orn5">dashed</p>
+
+        <p id="orn6">dotted</p>
+
+        <p id="orn7">groove</p>
+
+        <p id="orn8">ridge</p>
+
+        <p id="orn9">inset (üst ve sol bordera etki yaptığı için sağ bolderda etkisi yokmuş gibi duruyor)</p>
+
+        <p id="orn10">outset</p>
+
+        <p id="orn11">initial</p>
+
+        <p id="orn12" style="border-right-style: initial;">style ile initial</p>
+
+        <div id="inherit">
+            <p id="orn13">inherit</p>
+        </div>
+
+    </body>
+</html>

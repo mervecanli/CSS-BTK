@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  background-origin  => HTML elementi atanmış olan arka plan resminin başlangıç konumunu belirler.
+
+            Değerler           => padding-box | border-box | content-box | initial | inherit
+            padding-box        => Dolgu kutusu.
+            border-box         => Kenarlık kutusu.
+            content-box        => İçerik kutusu.
+            initial            => HTML elementi varsayılan biçimlendirme değerine döner.
+            inherit            => HTML elementi üst elementinin biçimlendirme değerini alır.
+        */
+
+        div#orn1 {
+            width: 1000px;
+            height: 620px;
+            border: 10px double red;
+            padding: 50px;
+            background-image: url(assets/desen.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* background-origin: padding-box; */
+            /* background-origin: border-box; */
+            background-origin: content-box;
+        }
+
+        div {
+            width: 65px;
+            height: 90px;
+            border: 10px double dodgerblue;
+            padding: 50px;
+            background-image: url(assets/desen.jpg);
+            background-size: 165px;
+            background-repeat: no-repeat;
+            color: red;
+        }
+        div#orn2 {
+            background-origin: padding-box;
+        }
+        div#orn3 {
+            background-origin: border-box;
+        }
+        div#orn4 {
+            background-origin: content-box;
+        }
+        div#initial {
+            background-origin: initial;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="orn1">Extra Eğitim</div> -->
+
+    <div id="orn2">padding-box</div><br /><br />
+    <div id="orn3">border-box</div><br /><br />
+    <div id="orn4">content-box</div><br /><br />
+    <div id="initial">initial</div><br /><br />
+    <div id="initial-inline" style="background-origin: initial;">initial-inline</div><br /><br />
+    
+</body>
+</html>

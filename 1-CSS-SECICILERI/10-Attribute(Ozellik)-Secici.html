@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* Element (Tür) Seçici             => HTML'deki etiketleri seçerek CSS tanımlamaktır. Ör: span{color: red}
+               Genel (Evrensel) Seçici          => HTML'deki body tag'ının içerisinde yazılan tüm elementlere stil tanımlar. Ör: *{font-size:12px}
+               ID (Benzersiz Kimlik) Seçici     => HTML'deki belirtilen tag'ın içerisine tanımlanan id özelliği ile stil tanımlanır. Ör: div#firmaAdi{color:red} Ör2: #firmaAdi{color:red}
+               Class (Sınıf) Seçici             => HTML'deki belirtilen tag'ın içerisine tanımlanan class özelliği ile stil tanımlanır. Ör: div.baslik{color: red} Ör2: .baslik{color: red}
+               Child (Çocuk) Seçici             => HTML'de tag içerisinde başka bir tag varsa içteki tag üstteki tag'a child durumundadır. Ör: ul > li{color: red} Ör2: ul > li#deger2{color: red} Ör3: div > span > p {color: red}
+               Descendant (Torun-Soy) Seçici    => HTML'de tab içerisinde en az iki tag varsa iki atındaki tag'dan itibaren olan tag'lar en üstteki tag'a descendant durumundadır. Ör: ul span{color: red} Ör2: div a.demo{color: red}
+               Genel Kardeş (Sibling) Seçici    => HTML'de belirtilen tag'ın alt hizasında belirtilen tag varsa alttaki tag'lar üstteki tag'a genel kardeş durumunda olur. Ör: div ~ h3{color: red}
+               Bitişik Kardeş (Sibling) Seçici  => HTML'de belirtilen tag'ın hemen altında bitişik olarak bulunan belirtilen tag varsa alttaki tag üstte tag'a bitişik katdeş durumundadır. Ör: div + h3{color: red} Ör2: div#deneme + h3.boya{color: red}
+               Multiple (Çoklu) Seçici          => Birden fazla farklı HTML tag'ına stil uygulanması istenildiğinde HTML tag'ları arasına virgül konularak kullanılabilir. Ör: h3,li,div{color: red} Ör2: p#boya,div#ders{color: red}
+               Attribute (Özellik) Seçici       => HTML tagı ile özellik seçilebilir ve bu seçilen özellik üzerinden CSS uygulanabilir. Ör: h2[name],li[name]{color: red} Ör2: li[dropzone]{color: red}
+            */
+
+
+            /* li {
+                color: red;
+            } */
+            /* li[name] {
+                color: red;
+            } */
+            /* *[name] {
+                color: red;
+            }  */
+            /* [name] {
+                color: red;
+            }  */
+            /* h2[name], li[name]{
+                color: red;
+            } */
+            /* h2[id], li[id] {
+                color: red;
+            } */
+            /* li[title] {
+                color: red;
+            }
+            li[dropzone] {
+                color: blue;
+            } */
+            /* li[benimAdim] {
+                color: pink;
+            } */
+            </style>
+    </head>
+    <body>     
+        <ul>
+            <li id="">HTML</li>
+            <li name="">CSS</li>
+            <li style="color: red;">JAVASCRIPT</li>
+            <li class="">PHP</li>
+            <li accesskey="">ASP</li>
+            <li data-dil="">JAVA</li>
+            <li lang="">PYTHON</li>
+            <li spellcheck="false">C / C++</li>
+            <li tabindex="">C#</li>
+            <li title="">PHOTOSHOP</li>
+            <li translate="">3Ds MAX</li>
+            <li contenteditable="false">Maya</li>
+            <li contextmenu="">CINEMA 4D</li>
+            <li draggable="false">Unity 4D</li>
+            <li dropzone="">Unreal Engine</li>
+            <li benimAdim="">MERVE</li>
+        </ul> 
+
+        <!-- <h2 name="baslik" id="tanim">Extra Eğitim</h2>
+        <p>Volkan Alakent</p>
+        <div>A'dan Z'ye Eğitim Setleri</div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li name="">JAVASCRIPT</li>
+            <li id="pdil" name="Programlama">PHP</li>
+            <li id="" name="Programlama">ASP</li>
+            <li name="Programlama">JAVA</li>
+            <li name="Programlama">PYTHON</li>
+            <li name="Programlama">C / C++</li>
+            <li name="Programlama">C#</li>
+            <li name="grafikProgrami">PHOTOSHOP</li>
+            <li name="modellemeProgrami">3Ds MAX</li>
+            <li>CINEMA 4D</li>
+        </ul>  -->
+    </body>
+</html>

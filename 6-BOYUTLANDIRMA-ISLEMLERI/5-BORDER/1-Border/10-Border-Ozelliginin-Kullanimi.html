@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border     =>  HTML elementine kenarlık/çerçeve özelliğini belirler.
+                              CSS İLE HTML ELEMENTLERİNİN KENARLIKLARINI YANİ ÇERÇEVELERİNİ BİÇİMLENDİRMEK İSTERSEK BORDER ÖZELLİĞİNİ KULLANIRIZ.
+                              3 PARAMETRE ALIR: UZUNLUK & BİÇİM(STYLE) & RENK.
+                              UZUNLUK PARAMETRESİ TEK BAŞINA KULLANILMAZ.
+                              BİÇİM PARAMETRESİ TEK BAŞINA KULLANILIR. AYNI ZAMANDA YANINA RENK DE EKLENEBİLİR.
+                              UZUNLUK PARAMETRESİ İLE BİÇİM PARAMETRESİ KULLANILDIĞINDA RENK PARAMETRESİNİN KULLANILMA ZORUNLULUĞU YOKTUR.
+                              EĞER KULLANILMAZSA VARSAYILAN RENK OLAN SİYAH RENK KENARLIĞA ATANMIŞ OLUR.
+               Parametre  =>  length | style | color
+               Değerler   =>  length & initial & inherit & thin & medium & thick |
+                              none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset |
+                              color
+               -------
+               length     =>  Uzunluk değeri.
+               initial    =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+               inherit    =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+               thin       =>  İnce.           
+               medium     =>  Orta.          
+               thick      =>  Kalın.  
+
+               none       =>  Değer yok.         
+               hidden     =>  Gizli.           
+               solid      =>  Düz çizgi.          
+               double     =>  Çift çizgi.           
+               dashed     =>  Kesikli çizgi.          
+               dotted     =>  Noktalı çizgi.
+               groove     =>  İçe dönük gölgeli çizgi.
+               ridge      =>  Dışa dönük gölgeli çizgi.
+               inset      =>  İçe dönük derin çizgi.
+               outset     =>  Dışa dönük derin çizgi. 
+
+               color      =>  Renk. (rgb, ...)
+               -------
+            */
+            
+            span#orn1 {
+                border: 2px solid red;                
+            }
+            span#orn2{
+                border: thin solid red;
+            }
+            span#orn3{
+                border: medium solid red;
+            }
+            span#orn4{
+                border: thick solid red;
+            }
+            /* span#orn4{
+                border: initial;
+            } */
+            div {
+                border: 2px solid #f00;
+            }
+            span#uc{
+                border: inherit; /*2px solid #f00;*/
+            }
+            span#bir {
+                border:inherit;
+            }
+            span#iki, span#dort {
+                border: inherit;
+            } 
+            p#none {
+                border: none; /* border yok demektir */
+            }
+            p#hidden {
+                border: hidden; /* border aslında ekranda var ama border gizli demektir*/
+            }
+            p#hidden:hover {
+                border: medium solid red;
+            }
+            p#double {
+                border: 5px double red;
+            }
+            p#dashed {
+                border: 5px dashed red;
+            }
+            p#dotted {
+                border: 5px dotted red;
+            }
+            p#groove {
+                border: 15px groove red;
+            }
+            p#ridge {
+                border: 15px ridge red;
+            }
+            p#inset {
+                border: 15px inset red;
+            }
+
+            p#outset {
+                border: 15px outset red;
+            }
+
+            div#none {
+                border: none;
+            }
+            div#hidden {
+                border: hidden;
+            }
+            div#solid {
+                border: 2px solid palevioletred;
+            }
+            div#dotted {
+                border: 2px dotted palevioletred;
+            }
+            div#dashed {
+                border: 2px dashed palevioletred;
+            }
+            div#double {
+                border: 2px double palevioletred;
+            }
+            div#inset {
+                border: 2px inset palevioletred;
+            }
+            div#outset {
+                border: 2px outset palevioletred;
+            }
+            div#groove {
+                border: 2px groove palevioletred;
+            }
+            div#ridge {
+                border: 2px ridge palevioletred
+            }
+        </style>
+    </head>
+    <body>
+
+        <span id="orn1">2px solid</span><br /><br />
+        
+        <span id="orn2">thin solid</span><br /><br />
+
+        <span id="orn3">medium solid</span><br /><br />
+        
+        <span id="orn4" style="border: initial;">thick solid initial</span><br /><br />
+
+        <div>
+            <span id="bir">HTML</span> <span id="iki">JS</span> <span id="uc">CSS</span> <span id="dort">PHP</span>
+        </div><br /><br />
+
+        <p id="none">none</p><br />
+
+        <p id="hidden">hidden + hover</p><br />
+
+        <p id="double">double</p><br />
+
+        <p id="dashed">dashed</p><br />
+
+        <p id="dotted">dotted</p><br />
+
+        <p id="groove">groove</p><br />
+
+        <p id="ridge">ridge</p><br />
+
+        <p id="inset">inset</p><br />
+
+        <p id="outset">outset</p><br /><br /><br />
+
+        <div id="none">none</div><br /><br />
+        <div id="hidden">hidden</div><br /><br />
+        <div id="solid">solid</div><br /><br />
+        <div id="dashed">dashed</div><br /><br />
+        <div id="dotted">dotted</div><br /><br />
+        <div id="groove">groove</div><br /><br />
+        <div id="ridge">ridge</div><br /><br />
+        <div id="double">double</div><br /><br />
+        <div id="inset">inset</div><br /><br />
+        <div id="outset">outset</div><br /><br />
+
+    </body>
+</html>

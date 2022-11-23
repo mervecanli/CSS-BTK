@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link             => Daha önce hiç açılmamış link'in rengini tanımlar. 
+               :hover            => Belirtilen HTML elementinin mouse mouse ile üzerine gelindiğinde stil tanımlar. Belirtilen HTML elementinin mouse ile üzerinden ayrıldığında stil normale döner.
+               :active           => Belirtilen HTML elementi aktif olduğunda stil tanımlanır.
+               :visited          => Daha önce açılmış linkin rengini tanımlar.
+               :any-link         => Doküman içerisinde bulunan HTML'in link elementinin/elementlerinin URL değeri boş değilse stil tanımlar. 
+               :focus            => Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementinin odağından çıkıldığında stil normale döner.
+               :lang()           => Belirtilen HTML elementinin lang (dil) özelliğine göre stil tanımlaması yapar.
+               :target           => Belirtilen HTML elementine çapa türündeki linklerle bağlanmış olan ve tıklandığında hedeflenmiş olan elemente stil tanımlaması yapar.
+               :root             => HTML belgesinin kök(=html) elementine stil tanımlar. 
+               :empty            => Belirtilen HTML elementinin içeriği tamamen boş ise stil tanımlaması yapar.
+               :not()            => Belirtilen HTML elementi HARİÇ, diğer tüm HTML elementlerine stil tanımlar.
+               :checked          => Belirtilen HTML elementi seçildiğinde stil tanımlar. Belirtilen HTML elementi seçimi kaldırıldığında stil normale döner.
+               :disabled         => Belirtilen HTML elementi etkin olmadığında stil tanımlar.
+               :enabled          => Belirtilen HTML elementi etkin olduğunda stil tanımlar. 
+               :read-only        => Belirtilen HTML elementi sadece okunabilir olduğunda stil tanımlar.
+               :read-write       => Belirtilen HTML elementi okunabilir ve yazılabilir(düzenlenebili) olduğunda stil tanımlar.
+               :required         => Belirtilen HTML elementine bilgi girişi zorunlu olduğunda stil tanımlar. 
+               :optional         => Belirtilen HTML elementine bilgi girişi opsiyonel olduğunda stil tanmlaması yapar.
+               :valid            => Belirtilen HTML elementine bilgi girişi geçerli bir değer olduğunda stil tanımlar. Bu değer geçersiz bir değere döndüğünde stil normale döner.
+               :invalid          => Belirtilen HTML elementine bilgi girişi geçersiz bir değer olduğunda stil tanımlaması yapar. Bu değer geçerli bir değere döndüğünde stil normale döner. 
+               :in-range         => Belirtilen HTML elementine bilgi girişi belirtilen aralık dahilinde olduğunda stil tanımlaması yapar. Belirtilen aralık dışına çıkıldığında stil normale döner.
+               :out-of-range     => Belirtilen HTML elementine bilgi girişi belirtilen aralık dahilinde olmadığında stil tanımlaması yapar. Belirtilen aralık dahilinde olursa stil normale döner.
+               :first-child      => Belirtilen HTML elementi baz alınarak üst elementine göre BİTİŞİK ilk çocuk durumundaki elemente stil tanımlar.
+               :last-child       => Belirtilen HTML elementi baz alınarak üst elementine göre BİTİŞİK son çocuk durumundaki elemente stil tanımlar. 
+               :first-of-type    => Belirtilen HTML elementi baz alınarak üst elementine göre ilk çocuk durumundaki elemente stil tanımlar.
+               :last-of-type     => Belirtilen HTML elementi baz alınarak üst elementine göre son çocuk durumundaki elemente stil tanımlar.
+               :only-child       => Belirtilen HTML elementi baz alınarak üst elementine göre BİTİŞİK tek çocuk durumundaki elemente stil tanımlar. 
+               :only-of-type     => Belirtilen HTML elementi baz alınarak üst elementine göre kardeş element türleri de eşleşen tek çocuk durumundaki elemente stil tanımlaması yapar.
+               :nth-child()      => Belirtilen HTML elementi baz alınarak üst elementine göre kardeş elementine bakılmaksızın ilk çocuk durumundaki elementten başlanarak sıra numarasına/numaralarına göre stil tanımlar.
+                                    odd: Tek haneye göre sıralama, even: Çift haneye göre sıralama 
+               :nth-last-child() => Belirtilen HTML elementi baz alınarak üst elementine göre kardeş element türüne bakılmaksızın son çocuk durumundaki elementten başlayarak sıra numarasına/numaralarına göre stil tanımlar.
+                                    odd: Tek haneye göre sıralama, even: Çift haneye göre sıralama 
+               :nth-of-type()    => Belirtilen HTML elementi baz alınarak üst elementine göre kardeş element türleri de eşleşen ilk çocuk durumundaki elementten başlayarak sıra numarasına/numaralarına göre stil tanımlar. 
+                                    odd: Tek haneye göre sıralama, even: Çift haneye göre sıralama 
+            */
+
+            /* ul li:nth-of-type(3) {
+                background-color: pink;
+            } */
+
+            /* ul li:nth-of-type(3n+1) {
+                background-color: chartreuse;
+            } */
+
+            /* ul li:nth-of-type(odd) {
+                background-color: thistle;
+            } */
+
+            /* ul li:nth-of-type(even){
+                background-color: aquamarine;
+            } */
+
+            /* ul li:nth-of-type(-n+5) {
+                background-color: brown;
+            } */
+
+            /* ul li:nth-of-type(1n+4):nth-last-of-type(n+6) {
+                background-color: darkkhaki;
+            } */
+
+            div:nth-of-type(3n+7) {
+                background-color: chartreuse;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <h3>Extra Eğitim</h3>
+        <div>A'dan Z'ye HTML Eğitim Seti</div>
+        <div>A'dan Z'ye CSS Eğitim Seti</div>
+        <p>Deneme1</p>
+        <div>A'dan Z'ye JAVASCRIPT Eğitim Seti</div>
+        <div>A'dan Z'ye JQUERY Eğitim Seti</div>
+        <div>A'dan Z'ye PHP Eğitim Seti</div>
+        <div>A'dan Z'ye ASP Eğitim Seti</div>
+        <div>A'dan Z'ye XML Eğitim Seti</div>
+        <div>A'dan Z'ye BOOTSTRAP Eğitim Seti</div>
+        <p>Deneme2</p> 
+        <div>A'dan Z'ye SEO Eğitim Seti</div>
+        <p>Deneme3</p> 
+        <div>A'dan Z'ye JAVA Eğitim Seti</div>
+        <div>A'dan Z'ye PYTHON Eğitim Seti</div>
+        <div>A'dan Z'ye C / C++ Eğitim Seti</div>
+        <div>A'dan Z'ye C# Eğitim Seti</div>
+
+
+        <!-- <h3>Extra Eğitim</h3>
+        <ul>
+            <li>A'dan Z'ye HTML Eğitim Seti</li>
+            <li>A'dan Z'ye CSS Eğitim Seti</li>
+            <li>A'dan Z'ye JAVASCRIPT Eğitim Seti</li>
+            <li>A'dan Z'ye JQUERY Eğitim Seti</li>
+            <li>A'dan Z'ye PHP Eğitim Seti</li>
+            <li>A'dan Z'ye ASP Eğitim Seti</li>
+            <li>A'dan Z'ye XML Eğitim Seti</li>
+            <li>A'dan Z'ye BOOTSTRAP Eğitim Seti</li>
+            <li>A'dan Z'ye SEO Eğitim Seti</li>
+            <li>A'dan Z'ye JAVA Eğitim Seti</li>
+            <li>A'dan Z'ye PYTHON Eğitim Seti</li>
+            <li>A'dan Z'ye C / C++ Eğitim Seti</li>
+            <li>A'dan Z'ye C# Eğitim Seti</li>
+        </ul>    -->  
+
+    </body>
+</html>

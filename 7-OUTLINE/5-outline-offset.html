@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  outline-offset  :  HTML elementi için ana hat ile kenarlık/çerçeve arasındaki mesafeyi belirler.
+                Değerler        :  length, initial, inherit
+                
+                length          :  Uzunluk değeri.
+                initial         :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit         :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 1000px;
+                height: 100px;
+                margin-top: 25px;
+                margin-left: 25px;
+                border: 12px solid green;
+                outline: 12px solid red;
+                outline-offset: 10px;
+            }
+            div#orn2 {
+                width: 1000px;
+                height: 100px;
+                margin-top: 25px;
+                margin-left: 25px;
+                border: 12px solid green;
+                outline: 12px solid red;
+                outline-offset: -300px;
+            }
+            div#orn3 {
+                width: 1000px;
+                height: 100px;
+                margin-top: 25px;
+                margin-left: 25px;
+                border: 12px solid green;
+                outline: 12px solid red;
+                outline-offset: 5px;
+            }
+            div#orn3 {
+                outline-offset: initial;
+            }
+            div#orn4 {
+                width: 1000px;
+                height: 100px;
+                margin-top: 25px;
+                margin-left: 25px;
+                border: 12px solid green;
+                outline: 12px solid red;
+                outline-offset: 5px;
+            }
+            div#orn5 {
+                width: 1000px;
+                height: 200px;
+                margin-top: 25px;
+                margin-left: 25px;
+                border: 12px solid green;
+                outline: 12px solid red;
+                outline-offset: 12px;
+            }
+            div#inherit {
+                width: 700px;
+                height: 50px;
+                margin-top: 60px;
+                margin-left: 110px;
+                border: 12px solid rgb(0, 255, 0, 0.6);
+                outline: 12px solid rgb(255, 0, 0, 0.6);
+                outline-offset: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1"></div><br /><br /><br />
+
+        <div id="orn2"></div><br /><br /><br />
+
+        <div id="orn3"></div><br />
+
+        <div id="orn4" style="outline-offset: initial;"></div><br /><br /><br /><br />
+
+        <div id="orn5">
+            <div id="inherit"></div>
+        </div><br />
+
+    </body>
+</html>

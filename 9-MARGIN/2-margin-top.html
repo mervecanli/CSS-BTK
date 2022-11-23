@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  margin-top  :  HTML elementinin üst kenar boşluğu/dış boşluk özelliklerini belirler.
+                Değerler    :  length | % | auto | initial | inherit
+                  
+                length      :  Uzunluk değeri.
+                %           :  Yüzde değeri.
+                auto        :  Otomatik değer alır.
+                initial     :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit     :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 100px;
+                height: 50px;
+                border: 2px solid dodgerblue;
+                margin-top: 100px;
+            }
+            div#orn2 {
+                width: 100px;
+                height: 50px;
+                border: 2px solid red;
+                margin-top: 10%;
+            }
+            div#orn3 {
+                width: 100px;
+                height: 50px;
+                border: 2px solid lawngreen;
+                margin-top: 10%;
+            }
+            div#orn3.inherit {
+                margin-top: initial;
+            }
+            div#orn4 {
+                width: 100px;
+                height: 50px;
+                border: 2px solid fuchsia;
+                margin-top: 10%;
+            }
+            div#orn5 {
+                width: 104px;
+                height: 89px;
+                border: 2px solid rebeccapurple;
+                margin-top: 35px;
+            }
+            div#inherit {
+                width: 100px;
+                height: 50px;
+                border: 2px solid turquoise;
+                margin-top: inherit;
+            }
+            div#orn6 {
+                width: 100px;
+                height: 50px;
+                border: 2px solid peru;
+                margin-top: auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1"></div><br/>
+
+        <div id="orn2"></div><br/>
+
+        <div id="orn3"></div>
+        <div id="orn3"></div>
+        <div id="orn3" class="inherit"></div>
+        <div id="orn3" class="inherit"></div>
+        <div id="orn3"></div>
+
+        <div id="orn4" style="margin-top: initial;"></div><br/>
+
+        <div id="orn5">
+            <div id="inherit"></div>
+        </div><br/>
+
+        <div id="orn6"></div><br/>
+
+    </body>
+</html>

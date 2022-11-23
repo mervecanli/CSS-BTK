@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-width => HTM elementinin kenarlık/çerçeve genişliğini belirler.
+               Değerler     =>  length & initial & inherit & thin & medium & thick
+                 
+               length       =>  Uzunluk değeri.
+               initial      =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+               inherit      =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+               thin         =>  İnce.           
+               medium       =>  Orta.          
+               thick        =>  Kalın.  
+            */
+            span#orn1 {
+                /* border: 4px solid red; Burada borderın üst, alt, sağ ve sol width'leri aynı verilmiş oldu */
+                border: solid red;
+                border-width: 4px; /* Burada istenilirse borderın kenarlarına farklı width değerleri verilebilir.*/
+            }
+            span#orn2 {
+                border: solid red;
+                border-width: 8px;
+            }
+            span#orn2 {
+                border: solid red;
+                border-width: initial;
+            }
+            span#orn3 {
+                border: solid red;
+                border-width: 4px;
+            }
+            div#inherit {
+                border : solid red;
+                border-width: 5px;
+            }
+            span#orn4 {
+                border: solid blue;
+                border-width: inherit;
+            }
+            span#orn5 {
+                border: solid red;
+                border-width: thin;
+            }
+            span#orn6 {
+                border: solid red;
+                border-width: medium;
+            }
+            span#orn7 {
+                border: solid red;
+                border-width: thick;
+            }
+            span#orn8 {
+                border: solid red;
+                border-width: 5px 15px 25px 30px; /* 1.Parametre: Üst, 2.Parametre: Sağ, 3.Parametre: Alt, 4.Parametre:Sol */
+            }
+            span#orn9 {
+                border: solid red;
+                border-width: 5px 25px 45px; /* 1.Parametre: Üst, 2.Parametre: Sağ ve Sol, 3.Parametre: Alt */
+            }
+            span#orn10 {
+                border: solid red;
+                border-width: 10px 25px; /* 1.Parametre: Üst ve ALt, 2.Parametre: Sağ ve Sol */ 
+            }
+        </style>
+    </head>
+    <body>
+
+        <span id="orn1">Tek değer ile yapılan border-width örneği</span><br /><br />   
+
+        <span id="orn2">border-width initial</span><br /><br />      
+        
+        <span id="orn3" style="border-width: initial;">border-width style içinde initial</span><br /><br />        
+
+        <div id="inherit">
+            <span id="orn4">border-width inherit</span>       
+        </div><br />
+
+        <span id="orn5">border-width thin</span><br /><br />
+        
+        <span id="orn6">border-width medium</span><br /><br />    
+        
+        <span id="orn7">border-width thick</span><br /><br />        
+
+        <span id="orn8">border-width üst sağ alt sol 4 farklı parametre örneği</span><br /><br /><br /><br />    
+
+        <span id="orn9">border-width üst (sağ sol) alt 3 farklı parametre örneği</span><br /><br /><br /><br /><br /><br />        
+        
+        <span id="orn10">border-width (üst ve alt) (sağ ve sol) 2 farklı parametre örneği</span><br /><br /><br /><br />        
+
+    </body>
+</html>

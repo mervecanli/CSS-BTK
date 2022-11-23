@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* border-color  => HTML elementinin kenarlık/çerçeve rengini belirler.
+               Değerler      => color & transparent & initial & inherit  
+
+               color         => Renk.
+               transparent   => Transparan. Şeffaf.
+               initial       => HTML elementi varsayılan biçimlendirme değerine döner.             
+               inherit       => HTML elementi üst elementinin biçimlendirme değerini alır.             
+            */
+            span#orn1 {
+                border: 4px solid;
+                border-color: red;
+            }
+            span#orn2 {
+                border: 4px solid;
+                border-color: transparent;/* border aslında var ama transparant bir şekilde var */
+            }
+            span#orn3 {
+                border: 4px solid;
+                border-color: blue;
+            }
+            span#orn3 {
+                border: 4px solid;
+                border-color: initial;
+            }
+            span#orn4 {
+                border: 4px solid;
+                border-color: red;
+            }
+            div#inherit {
+                border: 3px solid;
+                border-color: red;
+            }
+            span#orn5 {
+                border: 6px dotted;
+                border-color: inherit;
+            }
+            span#orn6 {
+                border: 5px solid;
+                border-color: red red red red; /* Soldan sağa sırasıyla Üst, Sağ, Alt, Sol */
+            }
+            span#orn7 {
+                border: 5px solid;
+                border-color: red blue black grey; /* Soldan sağa sırasıyla Üst, Sağ, Alt, Sol */
+            }
+            span#orn8 {
+                border: 5px solid;
+                border-color: red blue black; /* 1. Parametre: Üst, 2.Parametre: Sağ ve Sol, 3. Parametre Alt */
+            }
+            span#orn9 {
+                border: 5px solid;
+                border-color: red blue; /* 1. Parametre: Üst ve Alt, 2.Parametre: Sağ ve Sol */
+            }
+            span#orn10 {
+                border: 5px solid;
+                border-color: rgba(255, 0, 4, 0.75) rgba(255, 0, 4, 0.50) rgba(255, 0, 4, 0.25) transparent;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <span id="orn1">border-color: red;</span><br /><br />
+
+        <span id="orn2">border-color: transparent;</span><br /><br />
+
+        <span id="orn3">border-color: initial;</span><br /><br />
+
+        <span id="orn4" style="border-color: initial;">style="border-color: initial;"</span><br /><br />
+
+        <div id="inherit">
+            <span id="orn5">border-color: inherit;"</span>
+        </div><br /><br />
+
+        <span id="orn6">4 parametre ile aynı renk atamak</span><br /><br />
+
+        <span id="orn7">4 parametre ile farklı renk atamak</span><br /><br />
+
+        <span id="orn8">3 parametre ile farklı renk atamak</span><br /><br />
+
+        <span id="orn9">2 parametre ile farklı renk atamak</span><br /><br />
+
+        <span id="orn10">4 parametre ile farklı şeffaf ve transparan renk atamak</span><br /><br />
+
+    </body>
+</html>

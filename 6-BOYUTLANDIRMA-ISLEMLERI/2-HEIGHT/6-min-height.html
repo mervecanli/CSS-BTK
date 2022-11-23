@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* min-height    => HTML elementinin minimum yüksekliğini belirler.
+               Değerler      => length | % | initial | inherit
+                    lenght   => Uzunluk değeri
+                    %        => Yüzde değeri
+                    initial  => HTML elementi varsayılan biçimlendirme değerine döner.
+                    inherit  => HTML elementi üst elementinin biçimlendirme değerini alır
+            */
+
+            /* div {
+                background-color: yellow;
+                min-height: 10px;
+            } */
+
+            /* div {
+                background-color: blue;
+                min-height:10px;
+            }
+            p {
+                background-color: yellow;
+                height: 5px;
+            } */
+
+            /* div {
+                background-color: blue;
+                min-height: 50%;
+            } */
+            /* div {
+                min-height: initial;
+            } */
+
+            div#anaeleman {
+                background-color: blue;
+                height: 50px;
+            }
+            div#usteleman {
+                min-height: 25px;;
+            }
+            div#bir{
+                background-color: yellow;
+                min-height: inherit;
+            }
+            div#iki {
+                background-color: yellow;
+                min-height: inherit;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="anaeleman">
+            <div id="usteleman">
+                <div id="bir">Extra Eğitim</div>
+                <div id="iki">Volkan Alakent</div>
+            </div>
+        </div>
+
+        <!-- <div style="min-height: initial">Extra Eğitim - Volkan Alakent</div> 
+        <div>Extra Eğitim - Volkan Alakent</div>  -->
+
+        <!-- <div>
+            <p>Extra Eğitim - Volkan Alakent</p>
+        </div> -->
+
+        <!-- <div>Extra Eğitim - Volkan Alakent</div>  -->
+
+    </body>
+</html>

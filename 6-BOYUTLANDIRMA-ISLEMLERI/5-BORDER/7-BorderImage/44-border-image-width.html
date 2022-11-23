@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-image-width  =>  HTML elementinin kenarlık/çerçeve resminin genişliğini belirler.
+                Değerler            =>  auto | length | % | initial |  inherit
+                auto                =>  Otomatik değer alır.
+                length              =>  Uzunluk değeri.
+                %                   =>  Yüzde değeri.
+                initial             =>  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit             =>  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: auto;
+            }
+            div#orn2 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 10px;
+            }
+            div#orn3 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 10px 30px;
+            }
+            div#orn4 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px 30px 10px;
+            }
+            div#orn5 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 30px 20px 15px 25px;
+            }
+            div#orn6 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 20%;
+            }
+            div#orn7 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 2% 4%;
+            }
+            div#orn8 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 20px;
+            }
+            div#orn8 {
+                border-image-width: initial;
+            }
+            div#orn9 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 20px;
+            }
+            div#inherit {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 100px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: 25px;
+            }
+            div#orn10 {
+                width: -webkit-calc(100%-60px);
+                width: -moz-calc(100%-60px);
+                width: -o-calc(100%-60px);
+                width: -ms-calc(100%-60px);
+                width: calc(100%-60px);
+                height: 20px;
+                margin-top: 10px;
+                border: 30px solid transparent;
+                border-image-source: url("borderImage.jpg");
+                border-image-slice: 30;
+                border-image-width: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div><br />
+
+        <div id="orn4"></div><br />
+
+        <div id="orn5"></div><br />
+
+        <div id="orn6"></div><br />
+
+        <div id="orn7"></div><br />
+
+        <div id="orn8"></div><br />
+
+        <div id="orn9" style="border-image-width: initial;"></div><br />
+
+        <div id="inherit">
+            <div id="orn10"></div>
+        </div><br />
+
+    </body>
+</html>

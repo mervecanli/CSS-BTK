@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  padding  : HTML elementinin dolgu/iç boşluk özelliklerini belirler.
+                Değerler : length | % | initial | inherit 
+
+                length   : Uzunluk değeri.
+                %        : Yüzde değeri.
+                initial  : HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit  : HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            div#orn1 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 25px;
+            }
+            div#orn2 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 100px 300px 200px 400px;
+                /* 1. parametre: üst, 2. parametre:sağ 3. parametre: alt, 4. parametre: sol */
+            }
+            div#orn3 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 50px 30px 20px;
+                /* 1. parametre: üst, 2. parametre:sağ ve sol, 3. parametre: alt */
+            }
+            div#orn4 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 50px 30px;
+                /* 1. parametre: üst ve alt, 2. parametre:sağ ve sol */
+            }
+            div#orn5 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 10%;
+            }
+            div#orn6 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 30px;
+            }
+            div#orn6 {
+                padding: initial;
+            }
+            div#orn7 {
+                width: 196px;
+                height: 18px;
+                border: 4px solid red;
+                padding: 30px;
+            }
+            div#orn8 {
+                width: 240px;
+                height: 75px;
+                border: 4px solid red;
+                padding: 15px;
+            }
+            p#inherit {
+                width: 196px;
+                height: 18px;
+                border: 4px solid green;
+                padding: inherit;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn2">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn3">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn4">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn5">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn6">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn7" style="padding: initial;">Extra Eğitim - Volkan Alakent</div><br/>
+
+        <div id="orn8">
+            <p id="inherit">Extra Eğitim - Volkan Alakent</p>
+        </div>
+        
+    </body>
+</html>

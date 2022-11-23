@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitim Seti</title>
+        <style>
+            /* ::first-letter => Belirtilen HTML elementinin ilk karakterine stil tanımlar.
+            */
+
+            /* ::first-letter {
+                color: red;
+                font-size: 40px;
+            } */
+
+            /* div::first-letter {
+                color: red;
+                font-size: 40px;
+            } */
+
+            p#paragraf::first-letter {
+                color: green;
+                font-size: 40px;
+            }
+
+            div[id *= "birinci"]::first-letter {
+                color: red;
+                font-size: 40px;
+            }
+            div[id *= "ikinci"]::first-letter {
+                color: blue;
+                font-size: 40px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <p id="paragraf">CSS internet siteleri üzerinde en yaygın olarak kullanılan bir biçimlendirme dilidir.
+           CSS olmadan HTML sayfaları görsellik açısından çok sade ve zayıftır.
+        </p>
+        <div id="birincidiv">CSS internet siteleri üzerinde en yaygın olarak kullanılan bir biçimlendirme dilidir.
+            CSS olmadan HTML sayfaları görsellik açısından çok sade ve zayıftır.
+        </div>
+        <div id="ikincidiv">CSS internet siteleri üzerinde en yaygın olarak kullanılan bir biçimlendirme dilidir.
+            CSS olmadan HTML sayfaları görsellik açısından çok sade ve zayıftır.
+        </div>
+
+    </body>
+</html>

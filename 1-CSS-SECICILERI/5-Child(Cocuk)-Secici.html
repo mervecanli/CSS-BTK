@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <!-- <link type="text/css" rel="stylesheet" href="6-Child(Cocuk)-Secici.css"> -->
+        <style>
+            /* Element (Tür) Seçici          => HTML'deki etiketleri seçerek CSS tanımlamaktır. Ör: span{color: red}
+               Genel (Evrensel) Seçici       => HTML'deki body tag'ının içerisinde yazılan tüm elementlere stil tanımlar. Ör: *{font-size:12px}
+               ID (Benzersiz Kimlik) Seçici  => HTML'deki belirtilen tag'ın içerisine tanımlanan id özelliği ile stil tanımlanır. Ör: div#firmaAdi{color:red} Ör2: #firmaAdi{color:red}
+               Class (Sınıf) Seçici          => HTML'deki belirtilen tag'ın içerisine tanımlanan class özelliği ile stil tanımlanır. Ör: div.baslik{color: red} Ör2: .baslik{color: red}
+               Child (Çocuk) Seçici          => HTML'de tag içerisinde başka bir tag varsa içteki tag üstteki tag'a child durumundadır. Ör: ul > li{color: red} Ör2: ul > li#deger2{color: red} Ör3: div > span > p {color: red}
+            */
+
+
+            /* div > p {
+                color: red;
+            } */
+
+            /* div > p > span {
+                color: darkorchid;
+            } */
+
+            /* ul > li {
+                color: red;
+            } */
+
+            /* ul>li#deger2 {
+                color:red;
+            } */
+
+            /* #deger2 {
+                color:red
+            } */
+
+            /* ul > li.deger {
+                color: red;
+            } */
+
+           div span {
+               color:red
+           }
+
+
+        </style>
+    </head>
+    <body>
+        <!-- <ul>
+            <li>HTML</li>
+            <li>JS</li>
+            <li id="deger1">CSS</li>
+            <li class="deger">PHP</li>
+            <li>ASP</li>
+        </ul>
+        <ul>
+            <li>HTML</li>
+            <li>JS</li>
+            <li id="deger2">CSS</li>
+            <li class="deger">PHP</li>
+            <li>ASP</li>
+        </ul> -->
+
+
+
+
+
+        <div>
+            <p>Volkan <span>Alakent</span></p>
+            <p>A'dan Z'ye <span>CSS</span> Eğitim Seti</p>
+            <span>
+                <p>Extra Eğitim</p>
+            </span>
+        </div>
+        <p>
+            <p>X Volkan Alakent</p>
+            <p>X A'dan Z'ye CSS Eğitim Seti</p>
+            <span>
+                <p>X Extra Eğitim</p>
+            </span>
+        </p>
+    </body>
+</html>

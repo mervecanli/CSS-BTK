@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* :link     => Daha önce hiç açılmamış link'in rengini tanımlar. 
+               :hover    => Belirtilen HTML elementinin mouse mouse ile üzerine gelindiğinde stil tanımlar. Belirtilen HTML elementinin mouse ile üzerinden ayrıldığında stil normale döner.
+               :active   => Belirtilen HTML elementi aktif olduğunda stil tanımlanır.
+               :visited  => Daha önce açılmış linkin rengini tanımlar.
+               :any-link => Doküman içerisinde bulunan HTML'in link elementinin/elementlerinin URL değeri boş değilse stil tanımlar. 
+               :focus    => Belirtilen HTML elementine odaklanıldığında stil tanımlar. Belirtilen HTML elementinin odağından çıkıldığında stil normale döner.
+               :lang()   => Belirtilen HTML elementinin lang (dil) özelliğine göre stil tanımlaması yapar.
+            */
+
+            /* div[lang="it"] {
+                color: red;
+            }  */
+
+            /* div:lang(it) {
+                color: red;
+            }  */
+
+            /* div:lang("it") { hatalı yazım
+                color: red;
+            } */
+
+            div[class="menu"]:lang(en) {
+                color: red;
+            }
+
+            :lang(en) {
+                color: aquamarine;
+            }
+     
+
+        </style>
+    </head>
+    <body>
+        <div class="menu" lang="tr">Merhaba</div>
+        <div class="menu" lang="it">Ciao</div>
+        <div class="menu" lang="en">Hello</div>
+        <br /><br />
+        <div class="icerik" lang="tr">Merhaba</div>
+        <div class="icerik" lang="it">Ciao</div>
+        <div class="icerik" lang="en">Hello</div>
+
+
+
+        <!-- <div lang="tr">Merhaba</div>
+        <div lang="it">Ciao</div>
+        <div lang="en">Hello</div> -->
+       
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-left-width   =>  HTML elementinin SOL kenarlık/çerçeve genişliğini belirler.
+                Değerler            =>  length & initial & inherit & thin & medium & thick 
+               
+                length              =>  Uzunluk değeri.
+                initial             =>  HTML elementi varsayılan biçimlendirme değerine döner.             
+                inherit             =>  HTML elementi üst elementinin biçimlendirme değerini alır.             
+                thin                =>  İnce.           
+                medium              =>  Orta.          
+                thick               =>  Kalın.  
+            */
+
+            p#orn1 {
+                width: 1000px;
+                height: 100px;
+                border: 10px solid orange;
+                border-left-width: 2px;
+            }
+            p#orn2 {
+                width: 1000px;
+                height: 100px;
+                border: 10px solid orangered ;    
+                border-left-width: thin;    
+            }
+            p#orn3 {
+                width: 1000px;
+                height: 100px;
+                border: 10px solid orangered;
+                border-left-width: medium;
+            }
+            p#orn4 {
+                width: 1000px;
+                height: 100px;
+                border: 10px solid orangered;
+                border-left-width: thick;
+            }
+            p#orn5 {
+                width: 1000px;
+                height: 100px;
+                border: 10px solid orchid;  
+                border-left-width: initial;              
+            }
+            p#orn6 {
+                width: 1000px;
+                height: 100px;
+                border: 10px solid orchid;  
+            }
+            div#inherit {
+                width: 500px;
+                height: 300px;
+                border: 7px solid red;
+                border-left-width: 15px;
+            }
+            p#orn7 {
+                width: 300px;
+                height: 150px;
+                margin-left: 10px;
+                margin-top: 10px;
+                border: 5px solid orangered;
+                border-left-width: inherit;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p id="orn1"></p>
+
+        <p id="orn2"></p>
+
+        <p id="orn3"></p>
+
+        <p id="orn4"></p>
+
+        <p id="orn5"></p>
+
+        <p id="orn6" style="border-left-width: initial;"></p>
+
+        <div id="inherit">
+            <p id="orn7"></p>
+        </div><br />
+
+
+    </body>
+</html>

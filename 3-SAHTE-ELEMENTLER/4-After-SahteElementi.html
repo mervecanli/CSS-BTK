@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitim Seti</title>
+        <style>
+            /* ::first-letter => Belirtilen HTML elementinin ilk karakterine stil tanımlar.
+               ::first-line   => Belirtilen HTML elementinin ilk satırına stil tanımlar. 
+               ::before       => Belirtilen HTML elementinin öncesine içerik atayarak stil tanımlar.
+               ::after        => Belirtilen HTML elementinin sonrasına içerik atayarak stil tanımlar.
+            */
+
+            /* p::after {
+                content: "lar";
+            } */
+
+            /* p::after {
+                content: "lar";
+                color: gray;
+            } */
+
+            /* p::after {
+                content: " \2605";
+                color: royalblue;
+            } */
+
+            button[id="buton1"]::after {
+                content: " \2605 \2605 \2605 \2605 \2605";
+                color: palevioletred ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <button id="buton1"></button> <br /><br />
+        <button id="buton2">buton2</button>
+        <!-- <p>Yıldız</p> -->
+    </body>
+</html>

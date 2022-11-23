@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  CSS DE BOYUTLANDIRMA İŞLEMLERİ YAPARKEN EKRAN İŞLEMLERİNDE YANİ BİLGİSAYARDA, CEP TELEFONUNDA VE TABLETTE EĞER TARAYICI İÇERİSİNDE SAYFA AÇILACAKSA PX VEYA % KULLANIN.
+                EĞER BASKI YAPILACAKSA YANİ YAZICIDAN ÇIKTI ALINACAKSA PX VEYA PT KULLANIN.
+                EN GÜZEL ÖLÇÜ BİRİMLERİ BUNLARDIR!
+            */
+            
+            /*div {*/
+                /*background-color: yellow;*/
+                /* KESİN ÖLÇÜ BİRİMLERİ */
+                /* width: 500px; */
+                /* width: 500pt; */
+                /* width: 500pc; */
+                /* width: 500mm; */
+                /* height: 100mm; */
+                /* height: 5cm; */
+                /* height: 3in; */ /*1in = 2.54cm*/
+                /* width:500.50px */
+            /*}*/
+
+            /* div#bir {
+                background-color: yellow;
+                width: 10px;
+            }
+            div#iki {
+                background-color: yellow;
+                width: 10pt;
+            }
+            div#uc {
+                background-color: yellow;
+                width: 10pc;
+            }
+            div#dort {
+                background-color: yellow;
+                width: 10mm;
+            }
+            div#bes {
+                background-color: yellow;
+                width: 10cm;
+            }
+            div#alti {
+                background-color: yellow;
+                width: 10in;
+            } */
+
+            html {
+                font-size: 10px;
+            }
+
+            div {
+                /* GÖRECELİ ÖLÇÜ BİRİMLERİ */
+                background-color: yellow;
+                /* width: 50%; */
+                /* width: 100em; */ /*font-size atanırsa onun belirlenen katı ile dikkate alınır, atanmazsa fon-family deki M harfinin genişlik ve yükseklik değeri dikkate alınarak işlem yapılır.*/
+                /* width: 100rem; */ /*kök eleman dışındaki font-size dikkate alınmaz. font boyutu kök elemandan(=html elemanti) alınır. Örnekten yola çıkarak; 1rem=10px olmuş oldu.*/
+                /* width: 10ex; */
+                /* width: 50ch;
+                height: 50ch; */
+                /*width: 50vw;*/ /*viewport=tarayıcının görünür alanı */ /*1vw tarayıcının %1'ini alır, vw'da tarayıcı genişliğe göre ölçülendirme yapar*/
+                /*width: 50vh;*/ /*viewport=tarayıcının görünür alanı */ /*1vh tarayıcının %1'ini alır, vh'da tarayıcı yüksekliğine göre hesaplama yapar*/
+                /*width: 50vmin;*/ /*viewporttaki genişlik veya yükseklik değerinden hangisi daha azsa onun %1'ine eşit olur. */
+                width: 50vmax; /*viewporttaki genişlik veya yükseklik değerinden hangisi daha büyükse onun %1'ine eşit olur. */
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>0Merve</div> 
+
+        <!-- <div id="bir">px</div><br />
+        <div id="iki">pt</div><br />
+        <div id="dort">mm</div><br />
+        <div id="uc">pc</div><br />
+        <div id="bes">cm</div><br />
+        <div id="alti">in</div><br /> -->
+
+        <!-- <div>Extra Eğitim - Volkan Alakent</div>  -->
+        
+    </body>
+</html>

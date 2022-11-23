@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  margin    :  HTML elementinin kenar boşluğu/dış boşluk özelliklerini belirler.
+                Değerler  :  length | % | auto | initial | inherit
+                
+                length    :  Uzunluk değeri.
+                %         :  Yüzde değeri.
+                auto      :  Otomatik değer alır.
+                initial   :  HTML elementi varsayılan biçimlendirme değerine döner.
+                inherit   :  HTML elementi üst elementinin biçimlendirme değerini alır.
+
+                NOT: p tagının varsayılan biçimlendirme özelliğinde üstte ve altta margin bulunur
+                ancak div tag'ında varsayılan biçimlendirme özelliğinde margin bulunmaz.
+                body tag'ı da varsayılan biçimlendirme özelliğinde margin'e sahiptir.
+            */
+            body {
+                margin: 0;
+            }
+
+            div[id="orn1"] {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 100px;
+            }
+            div[id="orn2"] {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 20px 30px 15px 40px;
+                /* 1.parametre: üst, 2.parametre:sağ, 3.parametre: alt, 4.parametre:sol */
+            }
+            div[id="orn3"] {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 20px 30px 15px;
+                /* 1.parametre: üst, 2.parametre:sağ ve sol, 3.parametre: alt */
+            }
+            div[id="orn4"] {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 20px 30px;
+                /* 1.parametre: üst ve alt, 2.parametre: sağ ve sol */
+            }
+            div#orn5 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+            }
+            p#orn6 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 0;
+            }
+            div#orn7 {
+                width: 100%;
+                height: 50px;
+                background-color: dodgerblue;
+            }
+            div#orn8 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 25% 50%;
+            }
+            div#orn9 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid purple;
+                margin: 0 auto;
+            }
+            div#orn10 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 0 auto;
+            }
+            div#orn10 {
+                margin: initial;
+            }
+            div#orn11 {
+                width: 83px;
+                height: 18px;
+                border: 1px solid red;
+                margin: 0 auto;
+            }
+            div#orn12 {
+                width: 137px;
+                height: 72px;
+                border: 2px solid palegreen;
+                margin:25px;
+            }
+            div#inherit {
+                width: 83px;
+                height: 18px;
+                border: 2px solid plum;
+                margin: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="orn1">Extra Eğitim</div><br/>
+
+        <div id="orn2">Extra Eğitim</div><br/>
+
+        <div id="orn3">Extra Eğitim</div><br/>
+
+        <div id="orn4">Extra Eğitim</div><br/>
+
+        <div id="orn5">Extra Eğitim</div>
+        <div id="orn5">Extra Eğitim</div>
+        <div id="orn5">Extra Eğitim</div>
+
+        <p id="orn6">Extra Eğitim</p>
+        <p id="orn6">Extra Eğitim</p>
+        <p id="orn6">Extra Eğitim</p>
+
+        <div id="orn7"></div><br/>
+
+        <div id="orn8">Extra Eğitim</div><br/>
+
+        <div id="orn9">Extra Eğitim</div><br/>
+
+        <div id="orn10">Extra Eğitim</div><br/>
+
+        <div id="orn11" style="margin: initial;">Extra Eğitim</div><br/>
+
+        <div id="orn12">
+            <div id="inherit">Extra Eğitim</div>
+        </div><br/>
+
+    </body>
+</html>

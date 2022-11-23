@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            div#orn1 {
+                width: 400px;
+                height: 200px;
+                border: 30px solid transparent;
+                -webkit-border-image: linear-gradient(blue, yellow);
+                -moz-border-image: linear-gradient(blue, yellow);
+                -o-border-image: linear-gradient(blue, yellow);
+                -ms-border-image: linear-gradient(blue, yellow);
+                border-image: linear-gradient(blue, yellow);
+            }
+            div#orn2 {
+                width: 400px;
+                height: 200px;
+                border: 30px solid transparent;
+                -webkit-border-image: linear-gradient(blue, yellow) 10;
+                -moz-border-image: linear-gradient(blue, yellow) 10;
+                -o-border-image: linear-gradient(blue, yellow) 10;
+                -ms-border-image: linear-gradient(blue, yellow) 10;
+                border-image: linear-gradient(blue, yellow) 10;
+            }
+            div#orn3 {
+                width: 400px;
+                height: 200px;
+                border: 5px solid transparent;
+                -webkit-border-image: linear-gradient(blue, yellow, orange, red) 50;
+                -moz-border-image: linear-gradient(blue, yellow, orange, red) 50;
+                -o-border-image: linear-gradient(blue, yellow, orange, red) 50;
+                -ms-border-image: linear-gradient(blue, yellow, orange, red) 50;
+                border-image: linear-gradient(blue, yellow, orange, red) 50;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1"></div><br />
+
+        <div id="orn2"></div><br />
+
+        <div id="orn3"></div><br />
+
+    </body>
+</html>

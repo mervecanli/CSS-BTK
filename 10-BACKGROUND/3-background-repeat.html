@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /* background-repeat  :  HTML elementine atanmış olan arkaplan resminin tekrarlanma özelliklerini belirler.
+               Değerler           :  repeat | space | round | no-repeat | repeat-x | repeat-y | initial | inherit 
+               
+               repeat             :  Tekrar et. Default.
+               space              :  Boşluk.
+               round              :  Yuvarla.
+               no-repeat          :  Tekrar yok.
+               repeat-x           :  x ekseni boyunca tekrar et.
+               repeat-y           :  y ekseni boyunca tekrar et.
+               initial            :  HTML elementi varsayılan biçimlendirme değerini alır.
+               inherit            :  HTML elementi üst elementinin biçimlendirme değerini alır.
+            */
+
+            /* body {
+                background-image: url(assets/desen.jpg); */
+                /* background-repeat: repeat; */ /* bu varsayılan özelliktir */
+                /* background-repeat: space; */
+                /* background-repeat: round; */
+                /* background-repeat: no-repeat; */
+                /* background-repeat: repeat; */
+                /* background-repeat: repeat-x; */
+                /* background-repeat: repeat-y;
+                background-repeat: initial;
+            }  */
+            div#orn1 {
+                width: 1500px;
+                height: 1000px;
+                border: 5px solid red;
+                background-image: url(assets/desen.jpg);
+                /* background-repeat: repeat; */ /* bu varsayılan özelliktir */
+                /* background-repeat: space; */
+                /* background-repeat: round; */
+                /* background-repeat: repeat-x; */
+                background-repeat: repeat-y;
+                background-repeat: initial;
+            }
+            div#orn2 {
+                width: 1500px;
+                height: 1000px;
+                border: 5px solid red;
+                background-image: url(assets/desen.jpg);
+                background-repeat: repeat-x;
+            }
+            div#inherit {
+                width: 1300px;
+                height: 1000px;
+                border: 10px solid green;
+                margin: 0 auto;
+                margin-top: 250px;
+                background-image: inherit;
+                background-repeat: inherit;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div id="orn1"></div><br />
+
+        <div id="orn2" style="background-repeat: initial;"></div><br />
+
+        <div id="orn2">
+            <div id="inherit"></div>
+        </div>
+        
+    </body>
+</html>

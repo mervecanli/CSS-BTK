@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Eğitimi Uygulama-1</title>
+        <style>
+            /*  border-left-color  =>  HTML elementinin sol kenarlık/çerçeve rengini belirler.
+                Değerler           =>  color | transparent | initial | iherit
+
+                color => Renk değeri.
+                transparent => Transparan değeri.
+                initial => HTML elemeni varsayılan biçimlendirme değerine döner.
+                inherit => HTML elementi üst elementinin biçimlendirme değerini alır. 
+            */
+
+            p#orn1 {
+                width: 1000px;
+                height: 100px;
+                border: 20px solid red;
+                border-left-color: blue;
+            }
+            p#orn2 {
+                width: 1000px;
+                height: 100px;
+                border: 20px solid red;
+                border-left-color: transparent;
+            }
+            p#orn3 {
+                width: 1000px;
+                height: 100px;
+                border: 20px solid red;
+            }
+            p#orn3 {
+                border-left-color: initial;
+            }
+            p#orn4 {
+                width: 1000px;
+                height: 100px;
+                border: 20px solid red;
+            }
+            div#inherit {
+                width: 1000px;
+                height: 120px;
+                border: 20px solid red;
+                border-left-color: yellow;
+            }
+            p#orn5 {
+                width: 500px;
+                height: 50px;
+                margin-top: 10px;
+                margin-left: 10px;
+                border: 20px solid green;
+                border-left-color: inherit;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <p id="orn1"></p>
+
+        <p id="orn2"></p>
+
+        <p id="orn3"></p>
+
+        <p id="orn4" style="border-left-color: initial;"></p>
+
+        <div id="inherit">
+            <p id="orn5"></p>
+        </div>
+
+    </body>
+</html>
